@@ -55,7 +55,7 @@ top: 3.5rem; pointer-events: initial;}
 .show-icon .nav-close{opacity: 1; transform: rotate(90deg);}
 
 /*for smaller devices*/
-@media screen and (max-width: 340px){
+@media screen and (max-width: 767px){
 .container{margin-inline: 1rem;}
 .nav-link{padding-inline: 1rem;}}
 
@@ -359,5 +359,6 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
