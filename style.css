@@ -1,0 +1,360 @@
+body{cursor: url(image/cursolbig.png), default;}
+
+body {background-color: black; margin: 0px; padding-left: 2px; padding-right: 2px;
+  padding-bottom: 2px; overflow-x: hidden; min-height: 100vh; 
+    border-left: 5px dashed;  box-sizing: border-box;
+    border-right: 5px dashed; 
+    border-bottom: 5px dashed; border-image: linear-gradient(45deg, red, blue, green) 1;}
+.social-media-icons{display: flex; justify-content: space-around; justify-self: auto; 
+border-bottom-color: white; border-style: solid; position: fixed; background-color: black; width: 96%;}
+.social-media-icons a{margin: 10px;}
+
+.Autograph{ width: 10em; margin-top: 70px; margin-left: 20px; animation-name: shrink;
+   animation-duration: 2s; animation-iteration-count: 2; display: inline; float: left; }
+@keyframes shrink{50%{transform: scale(0.5, 0.5);}}
+
+.Autograph2 {width: 10em; margin-top: 70px; margin-left: 20px; animation-name: shrink;
+   animation-duration: 2s; animation-iteration-count: 2; display: inline;}
+@keyframes shrink{50%{transform: scale(0.5, 0.5);}}
+
+.nav-burger{color: white;}
+.nav-close{color: white; background-color: black;}
+.nav-data{height: 100%; display: flex; justify-content: space-between; align-items: center;}
+
+.nav-toggle{position: relative; width: 32px; height: 32px;}
+.nav-burger,
+.nav-close{position: absolute; width: max-content; height: max-content;
+   inset: 0; margin: auto; font-size: 1.25rem; cursor: pointer; 
+transition: opacity .1s, transform .4s;}
+.nav-close{opacity: 0;}
+
+@media screen and (max-width: 1118px){
+  .nav-menu{position: absolute; left: 0; top: 2.5rem; width: 100%; height: calc(100vh - 3.5rem);
+  overflow: auto; pointer-events: none; opacity: 0; transition: top .4s, opacity .3s;}
+  .nav-menu::--webkit--scrollbar{width: 0;}
+  .nav-list{background-color: rgb(0, 0, 0); padding-top: 1rem; border: solid;
+     border-image: linear-gradient(45deg, red, blue, green) 1;}}
+
+.nav-link{padding: 1.25rem 1.5rem; display: flex; justify-content: space-between;
+   align-items: center; transition: background-color .3s;}
+.nav-link:hover{background-color: hsl(0, 0%, 10%);}
+
+
+.nav-list a{color:rgb(201, 191, 10); text-decoration: none;  font-family: StackSansNotch-Bold;} 
+.nav-list{font-size: 3.5vw;}
+@font-face {
+    font-family: StackSansNotch-Bold;
+    src: url(static/StackSansNotch-Bold.ttf);}
+
+ul{list-style: none;}
+
+.show-menu{opacity: 1;
+top: 3.5rem; pointer-events: initial;}
+
+.show-icon .nav-burger{opacity: 0; transform: rotate(90deg);}
+.show-icon .nav-close{opacity: 1; transform: rotate(90deg);}
+
+/*for smaller devices*/
+@media screen and (max-width: 340px){
+.container{margin-inline: 1rem;}
+.nav-link{padding-inline: 1rem;}}
+
+
+/*for large devices*/
+@media screen and (min-width: 1118px){
+.container{margin-inline: auto;}
+.nav-container{display: flex;  align-items: center;}
+.nav-link:hover{ background-color: transparent;}
+.nav{height: calc(var(--header-height) + 2rem);
+display: flex; justify-content: space-between;}
+.nav-toggle{display: none;}
+.nav-list{height: 100%;
+display: flex;
+column-gap: 3rem;}
+.nav-link{height: 100%; justify-content: initial; column-gap: .25rem;}
+
+.nav-menu{float: right;}}
+
+
+
+
+.milywayz{clear: left;} 
+
+p{color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 3.5vw; font-style: oblique; text-align: center;}
+
+#LATEST{border-style: outset; border-color: hsl(0, 0%, 55%);}
+
+h2{color: rgb(201, 191, 10); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-align: center;}
+.video-title{color: rgb(201, 191, 10); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-align: center;}
+h1, h3{ color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
+/*for large devices*/
+@media screen and (min-width: 1118px){.container{display: flex; flex-direction: row; align-items: center; gap: 30px; justify-content: center;}
+
+.textbutton{display: flex; flex-direction: column; align-items: center;}
+.musicaudio{width: 40vw;}}
+
+
+
+#musictitle{color: rgb(201, 191, 10); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+#button{padding: 0.8vw; font-size: 3vw; border-radius: 25px; border-style: groove;}
+.button:hover{ color: rgb(201, 191, 10); } .button:active{ color: rgb(201, 191, 10); }
+.button2{background-color: black; color: white; border-color: white; font-size: 1.8vw;}
+.button2:hover{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10);} 
+.button:active{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10);}
+.button3{background-color: black; color: white; border-color: white; font-size: 1.8vw; }
+.button3:hover{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10);} 
+.button:active{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10);}
+
+
+.video-container{display: grid; place-items: center;}
+
+iframe{width: 75vw; height: calc(75vw * 9 / 16);}
+
+.merch-store{width:30vw; margin: auto;}
+
+/* White Smoke*/
+.smoke-particle {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: rgba(200, 200, 200, 0.5); /* Semi-transparent gray */
+    border-radius: 50%; /* Makes it circular */
+    pointer-events: none; /* Prevents it from interfering with clicks */
+    animation: smoke-puff 1.5s ease-out forwards;
+}
+
+@keyframes smoke-puff {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(0.5);
+        filter: blur(5px);
+    }
+    100% {
+        opacity: 0;
+        /* Move upwards and slightly outwards, adjust values for effect */
+        transform: translate(calc(var(--randX) * 100px), -150px) scale(1.5); 
+        filter: blur(10px);
+    }
+}
+
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #000;
+  color: #f0f0f0;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3 {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a,
+.footer-column .social-icons a,
+.footer-column .email-signup input,
+.footer-column .email-signup button {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover,
+.footer-column .social-icons a:hover {
+  color: #a0a0a0; 
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 1.8em;
+}
+
+.email-signup h4 {
+  font-size: 1.1em;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.email-signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email-signup input[type="email"] {
+  padding: 12px;
+  border: 1px solid #444;
+  background-color: #222;
+  border-radius: 4px;
+  font-family: inherit;
+  width: 100%;
+}
+
+.email-signup input[type="email"]::placeholder {
+  color: #999;
+}
+
+.email-signup button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.email-signup button[type="submit"]:hover {
+  background-color: #8a2be2;
+}
+
+.footer-separator {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 40px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85em;
+  color: #a0a0a0;
+}
+
+.footer-bottom p {
+  margin-bottom: 10px;
+}
+
+.footer-bottom .legal-links a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom .legal-links a:hover {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 90%;
+    min-width: unset;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .email-signup form {
+    align-items: center;
+  }
+
+  .email-signup input[type="email"],
+  .email-signup button[type="submit"] {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 30px 15px;
+  }
+
+  .footer-column h3 {
+    font-size: 1.1em;
+  }
+
+  .footer-column ul li a,
+  .footer-column .social-icons a,
+  .footer-column .email-signup input,
+  .footer-column .email-signup button {
+    font-size: 0.9em;
+  }
+
+  .social-icons {
+    font-size: 1.5em;
+  }
+}
+/* --- Cookie Notification Styles --- */
+.cookie-notification {
+    position: fixed; 
+    bottom: 0;      
+    left: 0;        
+    width: 95%;    
+    background-color: #333; 
+    color: white;           
+    padding: 15px 20px;
+    display: flex;          
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+}
+
+.cookie-notification p {
+    margin: 0;
+    font-size: 14px;
+    flex-grow: 1; 
+}
+
+.cookie-notification button {
+    background-color: #5bc0de; /* A nice light blue/info color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 20px; 
+    transition: background-color 0.3s;
+}
+
+.cookie-notification button:hover {
+    background-color: #31b0d5;
+}
+
+/* Style for when the banner is hidden */
+.cookie-notification.hidden {
+    display: none;
+}
