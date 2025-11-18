@@ -1,4 +1,4 @@
-body{cursor: url(image/cursolbig.png), default;}
+body{cursor: url(cursolbig.png), default;}
 
 body {background-color: black; margin: 0px; padding-left: 2px; padding-right: 2px;
   padding-bottom: 2px; overflow-x: hidden; min-height: 100vh; 
@@ -44,7 +44,7 @@ transition: opacity .1s, transform .4s;}
 .nav-list{font-size: 3.5vw;}
 @font-face {
     font-family: StackSansNotch-Bold;
-    src: url(static/StackSansNotch-Bold.ttf);}
+    src: url(StackSansNotch-Bold.ttf);}
 
 ul{list-style: none;}
 
@@ -357,4 +357,5 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
 /* Style for when the banner is hidden */
 .cookie-notification.hidden {
     display: none;
+
 }
