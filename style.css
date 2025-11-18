@@ -28,7 +28,7 @@ border-bottom-color: white; border-style: solid; position: fixed; background-col
 transition: opacity .1s, transform .4s;}
 .nav-close{opacity: 0;}
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 1118px){
   .nav-menu{position: absolute; left: 0; top: 2.5rem; width: 100%; height: calc(100vh - 3.5rem);
   overflow: auto; pointer-events: none; opacity: 0; transition: top .4s, opacity .3s;}
   .nav-menu::--webkit--scrollbar{width: 0;}
@@ -359,4 +359,5 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
