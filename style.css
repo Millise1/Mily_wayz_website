@@ -46,6 +46,14 @@ transition: opacity .1s, transform .4s;}
     font-family: StackSansNotch-Bold;
     src: url(StackSansNotch-Bold.ttf);}
 
+@font-face {
+  font-family: BitcountSingleInk;
+  src: url(BitcountSingleInk-VariableFont_CRSV,ELSH,ELXP,SZP1,SZP2,XPN1,XPN2,YPN1,YPN2,slnt,wght.ttf);}
+
+@font-face {
+  font-family: SmoochSans;
+  src: url(SmoochSans-Thin.ttf);}
+
 ul{list-style: none;}
 
 .show-menu{opacity: 1;
@@ -359,6 +367,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
