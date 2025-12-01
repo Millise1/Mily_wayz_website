@@ -1,4 +1,4 @@
-body{cursor: url(cursolbig.png), default;}
+body{cursor: url(cursolbig.webp), default;}
 
 body {background-color: black; margin: 0px; padding-left: 2px; padding-right: 2px;
   padding-bottom: 2px; overflow-x: hidden; min-height: 100vh; 
@@ -378,6 +378,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
