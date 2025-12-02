@@ -106,16 +106,16 @@ h1, h3{ color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-ser
 
 
 
-.musictitle{color: rgb(201, 191, 10); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left: 80px; font-size: 24px;}
+.musictitle{color: rgb(201, 191, 10); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left: 80px; font-size: 24px; max-width: 100%;}
 
-.button{padding: 0.8vw; font-size: 24px; margin-left: 37px; border-radius: 25px; border-style: groove;}
+.button{padding: 0.8vw; font-size: 24px; margin-left: 37px; border-radius: 25px; border-style: groove;  max-width: 100%;}
 .button:hover{ color: rgb(201, 191, 10); } .button:active{ color: rgb(201, 191, 10); }
 
-.button2{background-color: black; color: white; border-color: white; font-size: 15px; margin-left: 10px;}
+.button2{background-color: black; color: white; border-color: white; font-size: 15px; margin-left: 10px;  max-width: 100%;}
 .button2:hover{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10);} 
 .button2:active{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10);}
 
-.button3{background-color: black; color: white; border-color: white; font-size: 20.1px; margin-left: 10px;}
+.button3{background-color: black; color: white; border-color: white; font-size: 15px; max-width: 100%;}
 .button3:hover{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10);} 
 .button3:active{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10);}
 
@@ -128,10 +128,22 @@ h1, h3{ color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-ser
 .button2,.button3{font-size: 1.8vw; margin-left: 90px;}} 
 
 
-
-.video-container{display: grid; place-items: center;}
-
 iframe{width: 75vw; height: calc(75vw * 9 / 16);}
+
+/* Video Grid */
+.video-grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;}
+
+.video-item {
+    background-color:gray;
+    width: 75vw; height: calc(75vw * 9 / 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;}
 
 .merch-store{width:30vw; margin: auto;}
 
@@ -378,6 +390,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
