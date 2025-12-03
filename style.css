@@ -91,6 +91,11 @@ column-gap: 3rem;}
   
 .nav-menu{float: right;}}
 
+/*for large devices*/
+@media screen and (min-width: 2000px){
+.milywayz{visibility: hidden;}
+}
+
 
 
 
@@ -398,6 +403,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
