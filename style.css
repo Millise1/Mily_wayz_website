@@ -387,7 +387,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
 }
 
 .cookie-notification button {
-    background-color: #5bc0de; /* A nice light blue/info color */
+    background-color: #6a0dad; /* A nice light blue/info color */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -399,7 +399,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
 }
 
 .cookie-notification button:hover {
-    background-color: #31b0d5;
+    background-color: #8a2be2;
 }
 
 /* Style for when the banner is hidden */
@@ -407,6 +407,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
