@@ -93,7 +93,7 @@ column-gap: 3rem;}
 
 /*for large devices*/
 @media screen and (min-width: 2050px){
-.milywayz{display: none;}
+.milywayz{visibility: hidden;}
 }
 
 
@@ -404,6 +404,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
