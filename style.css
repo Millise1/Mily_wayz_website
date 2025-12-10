@@ -1,5 +1,5 @@
--webkit-tap-highlight-color: transparent;
--moz-tap-highlight-color: transparent;
+*{-webkit-tap-highlight-color: transparent;
+-moz-tap-highlight-color: transparent;}
 *::selection {background-color: transparent; color: purple;}
 body{cursor: url(cursolbig.webp), default;}
 
@@ -407,6 +407,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
