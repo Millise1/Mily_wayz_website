@@ -1,4 +1,4 @@
-*::selection{background-color: none;}
+*::selection {background-color: transparent; color: purple;}
 body{cursor: url(cursolbig.webp), default;}
 
 body {background-color: black; margin: 0px; padding-left: 2px; padding-right: 2px;
@@ -405,6 +405,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
