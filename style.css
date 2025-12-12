@@ -9,7 +9,7 @@ body {background-color: black; margin: 0px; padding-left: 2px; padding-right: 2p
     border-right: 5px dashed; 
     border-bottom: 5px dashed; border-image: linear-gradient(45deg, red, blue, green) 1;}
 .social-media-icons{display: flex; justify-content: space-around; justify-self: auto; 
-border-bottom-color: white; border-style: solid; position: fixed; background-color: black; width: 96%;}
+border-bottom-color: white; border-style: solid; position: fixed; background-color: black; width: 96%; z-index: 1;}
 .social-media-icons a{margin: 10px;}
 
 /*(Nav design)for large devices*/
@@ -410,6 +410,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
