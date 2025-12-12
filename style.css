@@ -50,7 +50,10 @@ transition: opacity .1s, transform .4s;}
 
 
 .nav-list a{color:rgb(201, 191, 10); text-decoration: none;  font-family: StackSansNotch-Bold;} 
-.nav-list{font-size: 3.5vw;}
+.nav-list{font-size: 1.4em;}
+
+@media screen and (min-width: 700px){.nav-list{font-size: 3.5vw;}}
+
 @font-face {
     font-family: StackSansNotch-Bold;
     src: url(StackSansNotch-Bold.ttf);}
@@ -407,6 +410,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
