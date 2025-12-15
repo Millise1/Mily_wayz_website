@@ -169,6 +169,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
 /* White Smoke*/
 .smoke-particle {
     position: fixed;
+    z-index: 1000;
     width: 20px;
     height: 20px;
     background: rgba(200, 200, 200, 0.5); /* Semi-transparent gray */
@@ -410,6 +411,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
