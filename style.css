@@ -56,15 +56,15 @@ transition: opacity .1s, transform .4s;}
 
 @font-face {
     font-family: StackSansNotch-Bold;
-    src: url(StackSansNotch-Bold.ttf);}
+    src: url(StackSansNotch-Bold.ttf); font-display: swap;}
 
 @font-face {
   font-family: BitcountSingleInk;
-  src: url(BitcountSingleInk-VariableFont_CRSV,ELSH,ELXP,SZP1,SZP2,XPN1,XPN2,YPN1,YPN2,slnt,wght.ttf);}
+  src: url(BitcountSingleInk-VariableFont_CRSV,ELSH,ELXP,SZP1,SZP2,XPN1,XPN2,YPN1,YPN2,slnt,wght.ttf); font-display: swap;}
 
 @font-face {
   font-family: SmoochSans;
-  src: url(SmoochSans-Thin.ttf);}
+  src: url(SmoochSans-Thin.ttf); font-display: swap;}
 
 ul{list-style: none;}
 
@@ -411,6 +411,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
