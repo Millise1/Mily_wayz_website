@@ -1,0 +1,7 @@
+# General settings for all search engines
+User-agent: *
+Allow: /
+Disallow: /drafts/
+
+# Direct link to your sitemap to help crawlers find your content
+Sitemap: https://millise1.github.io/Mily_wayz_website/sitemap.xml
