@@ -368,6 +368,34 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     font-size: 1.5em;
   }
 }
+
+#success-message {
+    background-color: rgba(106, 13, 173, 0.1);
+    border: 1px solid #6a0dad;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#success-message p {
+    color: #ffffff;
+    font-size: 0.9em;
+    margin: 0;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Optional: Fade out the form after submission */
+.form-hidden {
+    display: none !important;
+}
+
 /* --- Cookie Notification Styles --- */
 .cookie-notification {
     position: fixed; 
@@ -411,6 +439,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
