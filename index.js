@@ -72,6 +72,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
+var submitted = false;
+    
+function showSuccess() {
+    if(submitted) {
+        document.getElementById('newsletter-form').style.display = 'none';
+        document.getElementById('success-message').style.display = 'block';
+    }
+}
+
+
 
 
 
