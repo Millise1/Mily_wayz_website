@@ -111,15 +111,30 @@
 
                 <div class="email-signup">
                     <h4>Join the Mailing List</h4>
-                    <form action="[Your Form Handler URL]" method="POST">
-                        <input type="email" placeholder="Enter Email Address" required>
-                        <button type="submit">Submit</button>
-                        <h5>By clicking 'Submit,' you agree to receive updates from Mily wayz.
-                             Your email address will be processed and managed by our third-party
-                              provider, Bandsintown, solely for the purpose of sending you newsletters.
-                               We do not store your email on our site. You can unsubscribe at any time.
-                                For details, please review our Privacy Policy.</h5>
+                    
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {showSuccess();}"></iframe>
+
+                    <form id="newsletter-form" 
+                        action="https://www.bandsintown.com/artist/15621267/email_signup" 
+                        method="POST" 
+                        target="hidden_iframe" 
+                        onsubmit="submitted=true;">
+                        
+                        <input type="email" name="email" placeholder="Enter Email Address" required>
+                        <input type="hidden" name="artist_id" value="15621267">
+                        <button type="submit" id="submit-btn">Submit</button>
                     </form>
+
+                    <div id="success-message" style="display: none;">
+                        <p>✨ Thanks for joining the journey! Check your inbox soon.</p>
+                    </div>
+
+                    <h5>By clicking 'Submit,' you agree to receive updates from Mily wayz.
+                        Your email address will be processed and managed by our third-party
+                        provider, Bandsintown, solely for the purpose of sending you newsletters.
+                        We do not store your email on our site. You can unsubscribe at any time.
+                        For details, please review our Privacy Policy.
+                    </h5>
                 </div>
             </div>
 
@@ -147,6 +162,7 @@
 </body>
 
 </html>
+
 
 
 
