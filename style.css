@@ -255,8 +255,9 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
 .social-icons {
   display: flex;
   gap: 8px;
-  font-size: 1.8em;
 }
+
+.social-icons i{font-size: 25px}
 
 
 .footer-separator {
@@ -416,6 +417,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
