@@ -3,12 +3,6 @@ User-agent: Googlebot-Image
 Disallow: /Mily-Autograph-_1_.webp
 Disallow: /Mily_Autograph%202.webp
 Disallow: /Vendblue-logo.webp
-Disallow: /fb-logo.webp
-Disallow: /ig-logo.webp
-Disallow: /tiktok%20logo.webp
-Disallow: /threads%20logo.webp
-Disallow: /x-logo.webp
-Disallow: /YouTube-logo.webp
 Disallow: /Amazon-Merch-Logo.webp
 
 # Allow all other bots to crawl the site for general search
