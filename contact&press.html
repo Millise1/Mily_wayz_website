@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Press | Mily Wayz Official</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Mily-favicon48.webp">
+    
+    <meta name="description" content="Contact Mily Wayz for bookings, press inquiries, and collaborations. Reach out to the team today.">
+    <meta name="robots" content="index, follow">
+
+    <style>
+        .contact-section {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.submit-btn {
+    background: #000; /* Use Mily Wayz brand color */
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    opacity: 0.8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+
+    <link rel="preload" href="/Mily_wayz_website/index.js" as="script">
+</head>
+<body>
+    <a href="index.html" title="Mily wayz"><img class="Autograph2" id="Autograph2" src="image/Mily_Autograph 2.png" fetchpriority="high" alt="Mily Wayz"></a>
+    <section class="contact-section">
+        <div class="container">
+            <h1 class="section-title">Get In Touch</h1>
+            <p class="section-subtitle">For bookings, press, or just to say hello, use the form below or reach out via email.</p>
+
+            <div class="contact-wrapper">
+                <form action="https://formspree.io/f/mkogjevq" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="_replyto" placeholder="Your Email" required>
+                    
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <select name="subject">
+                        <option value="Booking">Booking Inquiry</option>
+                        <option value="Press">Press/Media</option>
+                        <option value="General">General Inquiry</option>
+                    </select>
+                    <textarea name="message" placeholder="How can we help?" rows="5" required></textarea>
+                    
+                    <input type="hidden" name="_next" value="https://millise1.github.io/Mily_wayz_website/index.html">
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Management & Press</h3>
+                    <p>For direct business inquiries, you may reach our office below:</p>
+                    <p><strong>Email:</strong> <a href="mailto:wezuduemoih@gmail.com">wezuduemoih@gmail.com</a></p>
+                    <p><strong>Location:</strong> Lagos, Nigeria</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="index.js" defer></script>
+</body>
+</html>
