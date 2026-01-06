@@ -375,6 +375,17 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
         text-align: center;
     }
 }
+.license{
+    text-decoration: none;
+    color: hsl(275, 86%, 70%);
+}
+
+.license:hover{
+    color: #a0a0a0;
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+}
+
 /* --- Cookie Notification Styles --- */
 .cookie-notification {
     position: fixed; 
@@ -418,6 +429,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
