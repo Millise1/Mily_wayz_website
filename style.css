@@ -148,14 +148,14 @@ h1, h3{ color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-ser
 .musictitle{color: rgb(201, 191, 10); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left: 80px; font-size: 24px; max-width: 100%;}
 
 .button{padding: 0.8vw; font-size: 24px; margin-left: 37px; border-radius: 25px; border-style: groove;  max-width: 100%;}
-.button:hover{ color: rgb(201, 191, 10); } .button:active{ color: rgb(201, 191, 10); }
+.button:hover{ color: rgb(201, 191, 10); transition: all 0.3s ease-in-out; } .button:active{ color: rgb(201, 191, 10); }
 
 .button2{background-color: black; color: white; border-color: white; font-size: 15px; margin-left: 10px;  max-width: 100%;}
-.button2:hover{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10);} 
+.button2:hover{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10); transition: all 0.3s ease-in-out; } 
 .button2:active{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10);}
 
 .button3{background-color: black; color: white; border-color: white; font-size: 15px; max-width: 100%;}
-.button3:hover{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10);} 
+.button3:hover{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10); transition: all 0.3s ease-in-out; } 
 .button3:active{ color: rgb(201, 191, 10); border-color: rgb(201, 191, 10);}
 
 /*for large devices*/
@@ -453,6 +453,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
