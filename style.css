@@ -112,7 +112,22 @@ column-gap: 3rem;}
 
 .milywayz{clear: left;} 
 
-p{color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.bio-section {margin-left: 20px; margin-right: 20px;}
+
+.bio-header {
+    color: rgb(201, 191, 10); display: block; margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5vw; font-style: oblique; text-align: center;
+}
+
+.bio-block, .bio-footer {
+    opacity: 0;
+    transform: translateY(30px);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.bio-text, .bio-footer {color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    font-size: 3.5vw; font-style: oblique; text-align: center;}
 
 #LATEST{border-style: outset; border-color: hsl(0, 0%, 55%);}
@@ -170,6 +185,15 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     border-radius: 10px;}
 
 .merch-store{width:30vw; margin: auto;}
+
+.merch-item img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.merch-item img:hover {
+    transform: scale(1.1); /* Grows slightly */
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5)); /* White glow */
+}
 
 /* White Smoke*/
 .smoke-particle {
@@ -429,6 +453,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     display: none;
 
 }
+
 
 
 
