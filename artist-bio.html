@@ -68,30 +68,33 @@
             </div>
            <a href="index.html" title="Mily wayz"><img class="Autograph2" id="Autograph2" src="Mily_Autograph 2.webp" fetchpriority="high" alt="Mily Wayz"></a>
         </header>
-    <main>
-        <p>
-        <b style="color:rgb(201, 191, 10)">Artist Bio</b><br>
-    Mily Wayz is a passionate singer-songwriter<br> 
-    driven by his love for music. With a desire<br>
-    to make his mark, he's dedicated to expressing<br>
-    himself through his art. His stage name, "Mily Wayz,"<br> 
-    embodies his independence and determination to<br> 
-    pursue his dreams without validation.<br>
-    Follow Mily Wayz for soulful melodies<br> 
-    and authentic storytelling.<br><br>
-
-    <b style="color:rgb(201, 191, 10)">Genre</b><br>
-    Afro Pop<br><br>
-
-    <b style="color:rgb(201, 191, 10)">Style</b><br>
-    His music style reflects his passion, individuality,<br>
-    and emotional depth, blending African rhythms with<br>
-    modern pop sensibilities.<br><br>
-
-    This captures the essence of Mily Wayz's<br>
-    artistry and music style!
-        </p>
-    </main><br><br><br><br><br>
+    <main class="bio-section">
+        <div class="bio-block">
+            <b class="bio-header">Artist Bio</b>
+            <p class="bio-text">
+                Mily Wayz is a passionate singer-songwriter driven by his love for music. 
+                With a desire to make his mark, he's dedicated to expressing himself through his art. 
+                His stage name, "Mily Wayz," embodies his independence and determination to 
+                pursue his dreams without validation. Follow Mily Wayz for soulful melodies 
+                and authentic storytelling.
+            </p>
+        </div>
+    
+        <div class="bio-block">
+            <b class="bio-header">Genre</b>
+            <p class="bio-text">Afro Pop</p>
+        </div>
+    
+        <div class="bio-block">
+            <b class="bio-header">Style</b>
+            <p class="bio-text">
+                His music style reflects his passion, individuality, and emotional depth, 
+                blending African rhythms with modern pop sensibilities.
+            </p>
+        </div>
+    
+        <p class="bio-footer">This captures the essence of Mily Wayz's artistry and music style!</p>
+    </main>
 
        <footer>
     <div class="footer-container">
@@ -179,9 +182,75 @@
     </button>
     </div>
     <script src="index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+    // Register ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate each bio block
+    gsap.utils.toArray(".bio-block").forEach((block) => {
+        gsap.to(block, {
+            scrollTrigger: {
+                trigger: block,
+                start: "top 85%", // Triggers when the block is 85% down the screen
+                toggleActions: "play none none none"
+            },
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out"
+        });
+    });
+
+    // Animate the final footer line
+    gsap.to(".bio-footer", {
+        scrollTrigger: {
+            trigger: ".bio-footer",
+            start: "top 90%",
+        },
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        fontStyle: "italic",
+    });
+
+    // Register the plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Ensure the code runs only after the full page is loaded
+    window.addEventListener("load", function() {
+
+
+        // --- 1. FOOTER COLUMNS STAGGER ---
+        gsap.from(".footer-column", {
+            scrollTrigger: {
+                trigger: ".footer-grid",
+                start: "top 95%",
+            },
+            opacity: 0,
+            y: 30,
+            stagger: 0.2,
+            duration: 0.8,
+            ease: "power2.out"
+        });
+
+        // --- 2. MAILING LIST IFRAME ---
+        gsap.from(".email-signup", {
+            scrollTrigger: {
+                trigger: ".email-signup",
+                start: "top 95%",
+            },
+            opacity: 0,
+            duration: 1.2
+        });
+
+    });
+    </script>
 </body>
 
 </html>
+
 
 
 
