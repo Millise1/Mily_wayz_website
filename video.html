@@ -25,6 +25,17 @@
     <meta name="twitter:image" content="https://millise1.github.io/Mily_wayz_website/og-image.png">
 
     <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" as="script">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" as="script">
+
+        <style>
+            .gsap-reveal {
+                visibility: hidden;
+            }
+        </style>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
 </head>
 
 <body class="content">
@@ -75,7 +86,7 @@
                 
         </header><br>
 
-        <main class="video-section">
+        <main class="video-section gsap-reveal">
             <h3 class="video" style="border-bottom-style: solid; border-bottom-color: white; font-size: 5vw; margin: 20px;">
                 <big><b>Video</b></big>
             </h3>
@@ -87,7 +98,7 @@
         <footer>
     <div class="footer-container">
 
-        <div class="footer-grid">
+        <div class="footer-grid gsap-reveal">
 
             <div class="footer-column social">
                 <h3>Stay Connected</h3>
@@ -169,58 +180,57 @@
     </div>
     <script src="nav.js" defer></script>
     <script src="index.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <script>  
+    // Even at the bottom, we wait for the external GSAP scripts (defer) 
+        // to finish by using a small check or DOMContentLoaded
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.registerPlugin(ScrollTrigger);
 
-    // Register the plugin
-    gsap.registerPlugin(ScrollTrigger);
+            // Immediately make visible so GSAP can take control
+            gsap.set(".gsap-reveal", { visibility: "visible" });
 
-    // Ensure the code runs only after the full page is loaded
-    window.addEventListener("load", function() {
+            // 1. Header Reveal
+            gsap.from(".video", {
+                scrollTrigger: {
+                    trigger: ".video",
+                    start: "top 90%",
+                },
+                opacity: 0,
+                x: -20,
+                duration: 1,
+                ease: "power2.out"
+            });
 
-        // 1. Header Reveal
-        gsap.from(".video", {
-            scrollTrigger: {
-                trigger: ".video",
-                start: "top 90%",
-            },
-            opacity: 0,
-            x: -20,
-            duration: 1,
-            ease: "power2.out"
+
+            // --- 2. FOOTER COLUMNS STAGGER ---
+            gsap.from(".footer-column", {
+                scrollTrigger: {
+                    trigger: ".footer-grid",
+                    start: "top 95%",
+                },
+                opacity: 0,
+                y: 30,
+                stagger: 0.2,
+                duration: 0.8,
+                ease: "power2.out"
+            });
+
+            // --- 3. MAILING LIST IFRAME ---
+            gsap.from(".email-signup", {
+                scrollTrigger: {
+                    trigger: ".email-signup",
+                    start: "top 95%",
+                },
+                opacity: 0,
+                duration: 1.2
+            });
         });
-
-
-        // --- 2. FOOTER COLUMNS STAGGER ---
-        gsap.from(".footer-column", {
-            scrollTrigger: {
-                trigger: ".footer-grid",
-                start: "top 95%",
-            },
-            opacity: 0,
-            y: 30,
-            stagger: 0.2,
-            duration: 0.8,
-            ease: "power2.out"
-        });
-
-        // --- 3. MAILING LIST IFRAME ---
-        gsap.from(".email-signup", {
-            scrollTrigger: {
-                trigger: ".email-signup",
-                start: "top 95%",
-            },
-            opacity: 0,
-            duration: 1.2
-        });
-
-    });
     </script>
 </body>
 
 </html>
+
 
 
 
