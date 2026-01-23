@@ -22,6 +22,18 @@
     <meta property="og:url" content="https://millise1.github.io/Mily_wayz_website/artist-bio.html">
     <meta property="og:image" content="https://millise1.github.io/Mily_wayz_website/milywayz.webp">
 
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" as="script">
+
+    <style>
+        .gsap-reveal {
+            visibility: hidden;
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -69,7 +81,7 @@
             </div>
            <a href="index.html" title="Mily wayz"><img class="Autograph2" id="Autograph2" src="Mily_Autograph 2.webp" fetchpriority="high" alt="Mily Wayz"></a>
         </header>
-    <main class="bio-section">
+    <main class="bio-section gsap-reveal">
         <div class="bio-block">
             <b class="bio-header">Artist Bio</b>
             <p class="bio-text">
@@ -100,7 +112,7 @@
        <footer>
     <div class="footer-container">
 
-        <div class="footer-grid">
+        <div class="footer-grid gsap-reveal">
 
             <div class="footer-column social">
                 <h3>Stay Connected</h3>
@@ -181,74 +193,70 @@
         <button id="accept-cookies-btn">Ok</button>
     </div>
     <script src="index.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script>
-    // Register ScrollTrigger
-    gsap.registerPlugin(ScrollTrigger);
+    // Even at the bottom, we wait for the external GSAP scripts (defer) 
+        // to finish by using a small check or DOMContentLoaded
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.registerPlugin(ScrollTrigger);
 
-    // Animate each bio block
-    gsap.utils.toArray(".bio-block").forEach((block) => {
-        gsap.to(block, {
-            scrollTrigger: {
-                trigger: block,
-                start: "top 85%", // Triggers when the block is 85% down the screen
-                toggleActions: "play none none none"
-            },
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "power2.out"
+            // Immediately make visible so GSAP can take control
+            gsap.set(".gsap-reveal", { visibility: "visible" });
+
+            // Animate each bio block
+            gsap.utils.toArray(".bio-block").forEach((block) => {
+                gsap.to(block, {
+                    scrollTrigger: {
+                        trigger: block,
+                        start: "top 85%", // Triggers when the block is 85% down the screen
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power2.out"
+                });
+            });
+
+            // Animate the final footer line
+            gsap.to(".bio-footer", {
+                scrollTrigger: {
+                    trigger: ".bio-footer",
+                    start: "top 90%",
+                },
+                opacity: 1,
+                y: 0,
+                duration: 1.2,
+                fontStyle: "italic",
+            });
+
+            // --- 1. FOOTER COLUMNS STAGGER ---
+            gsap.from(".footer-column", {
+                scrollTrigger: {
+                    trigger: ".footer-grid",
+                    start: "top 95%",
+                },
+                opacity: 0,
+                y: 30,
+                stagger: 0.2,
+                duration: 0.8,
+                ease: "power2.out"
+            });
+
+            // --- 2. MAILING LIST IFRAME ---
+            gsap.from(".email-signup", {
+                scrollTrigger: {
+                    trigger: ".email-signup",
+                    start: "top 95%",
+                },
+                opacity: 0,
+                duration: 1.2
+            });                    
         });
-    });
-
-    // Animate the final footer line
-    gsap.to(".bio-footer", {
-        scrollTrigger: {
-            trigger: ".bio-footer",
-            start: "top 90%",
-        },
-        opacity: 1,
-        y: 0,
-        duration: 1.2,
-        fontStyle: "italic",
-    });
-
-    // Register the plugin
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Ensure the code runs only after the full page is loaded
-    window.addEventListener("load", function() {
-
-
-        // --- 1. FOOTER COLUMNS STAGGER ---
-        gsap.from(".footer-column", {
-            scrollTrigger: {
-                trigger: ".footer-grid",
-                start: "top 95%",
-            },
-            opacity: 0,
-            y: 30,
-            stagger: 0.2,
-            duration: 0.8,
-            ease: "power2.out"
-        });
-
-        // --- 2. MAILING LIST IFRAME ---
-        gsap.from(".email-signup", {
-            scrollTrigger: {
-                trigger: ".email-signup",
-                start: "top 95%",
-            },
-            opacity: 0,
-            duration: 1.2
-        });
-
-    });
     </script>
 </body>
 
 </html>
+
 
 
 
