@@ -21,59 +21,37 @@ document.body.addEventListener('click', function(e) {
 
 
 
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
     const banner = document.getElementById('cookie-banner');
     const acceptBtn = document.getElementById('accept-cookies-btn');
-    const cookieName = 'infoBannerAccepted'; // Renamed cookie for clarity
-    const cookieValue = 'true';
-    const expirationDays = 30; 
+    const cookieName = 'infoBannerAccepted';
 
-    function getCookie(name) {
-        const nameEQ = name + "=";
-        const ca = document.cookie.split(';');
-        for(let i = 0; i < ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-        }
-        return null;
+    const getCookie = (name) => {
+        return document.cookie.split('; ').find(row => row.startsWith(name + '='));
+    };
+
+    // 1. If cookie is NOT found, remove 'hidden' to slide it UP
+    if (!getCookie(cookieName)) {
+        setTimeout(() => {
+            banner.classList.remove('hidden');
+        }, 300); 
     }
 
-    function setCookie(name, value, days) {
-        let expires = "";
-        if (days) {
-            const date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + (value || "")  + expires + "; path=/; secure; samesite=Lax";
-    }
-
-    // 1. Check if the "Ok" button has been clicked before
-    if (getCookie(cookieName) !== cookieValue) {
-        // If not accepted, show the banner
-        // We ensure it starts hidden in CSS and then remove the 'hidden' class 
-        // OR, ensure the 'hidden' class is only added when the cookie is present.
-        // For simplicity, make sure the HTML starts without 'hidden', and the JS hides it if the cookie is found.
-        // For this code, the logic is: if NO cookie, show the banner.
-    } else {
-         // If the cookie IS present, hide the banner immediately on load
-        banner.classList.add('hidden');
-    }
-
-    // 2. Add event listener to the button
     acceptBtn.addEventListener('click', () => {
-        // Hide the banner
-        banner.classList.add('hidden'); 
+        // 2. Add 'hidden' to slide it DOWN
+        banner.classList.add('hidden');
         
-        // Set the acceptance cookie
-        setCookie(cookieName, cookieValue, expirationDays);
+        const date = new Date();
+        date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
+        // Fixed: Added backticks for the template literal
+        document.cookie = `${cookieName}=true; expires=${date.toUTCString()}; path=/; secure; samesite=Lax`;
     });
 });
 
 
     /*AUTO-CHANGE-YEAR*/
         document.getElementById('year').textContent = new Date().getFullYear();
+
 
 
 
