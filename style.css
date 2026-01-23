@@ -413,23 +413,31 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
 /* --- Cookie Notification Styles --- */
 .cookie-notification {
     position: fixed; 
-    bottom: 0;      
-    left: 0;        
-    width: 95%;    
-    background-color: #333; 
-    color: white;           
-    padding: 15px 20px;
-    display: flex;          
-    justify-content: space-between; 
-    align-items: center;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); 
-    z-index: 1000; 
+    bottom: 20px; /* Lifted slightly off the bottom for a "floating" look */
+    left: 50%;        
+    width: 90%;    
+    max-width: 800px; /* Prevents it from being too wide on desktops */
+    transform: translateX(-50%) translateY(0); /* Centers horizontally */
+    background-color: #333;
+    border-radius: 10px; 
+    /* ... rest of your code ... */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* Updated hidden state to maintain horizontal centering while sliding down */
+#cookie-banner.hidden {
+    transform: translateX(-50%) translateY(150%); 
+    opacity: 0;
+    pointer-events: none;
 }
 
 .cookie-notification p {
     margin: 0;
     font-size: 14px;
-    flex-grow: 1; 
+    flex-grow: 1;
+    color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px; 
 }
 
 .cookie-notification button {
@@ -440,18 +448,13 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
-    margin-left: 20px; 
+    margin-left: 20px;
+    margin-bottom: 8px; 
     transition: background-color 0.3s;
 }
 
 .cookie-notification button:hover {
     background-color: #8a2be2;
-}
-
-/* Style for when the banner is hidden */
-.cookie-notification.hidden {
-    display: none;
-
 }
 
 
