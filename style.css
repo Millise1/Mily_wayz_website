@@ -19,8 +19,21 @@ border-bottom-color: white; border-style: solid; position: fixed; background-col
 
 /*(Nav design)for large devices*/
 @media screen and (min-width: 1350px){
-  .content {background-image: url(design.gif); background-repeat: no-repeat;
-  background-size: 100vw 21vw;}
+  .content::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url(design.gif);
+    background-repeat: no-repeat;
+    background-size: 100vw 21vw;
+    z-index: -1;
+    animation: gifFadeIn 2s ease-in;
+  }
+}
+@keyframes gifFadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .Autograph{ width: 10em; margin-top: 70px; margin-left: 20px; animation-name: shrink;
@@ -44,7 +57,7 @@ transition: opacity .1s, transform .4s;}
 
 @media screen and (max-width: 1350px){
   .nav-menu{position: absolute; left: 0; top: 2.5rem; width: 100%; height: calc(100vh - 3.5rem);
-  overflow: auto; pointer-events: none; opacity: 0; z-index: 1;}
+  overflow: auto; pointer-events: none; opacity: 0; transition: top .4s; z-index: 1;}
   .nav-menu::--webkit--scrollbar{width: 0;}
   .nav-list{background-color: rgb(0, 0, 0); z-index: 1; padding-top: 1rem; border: solid;
      border-image: linear-gradient(45deg, red, blue, green) 1;}}
@@ -456,6 +469,7 @@ iframe{width: 75vw; height: calc(75vw * 9 / 16);}
 .cookie-notification button:hover {
     background-color: #8a2be2;
 }
+
 
 
 
