@@ -1,4 +1,6 @@
+# 1. Global Rules - Apply to all bots
 User-agent: *
+# Images/Files you don't want showing up in search results
 Disallow: /Mily_wayz_website/Mily-Autograph-_1_.webp
 Disallow: /Mily_wayz_website/Mily_Autograph%202.webp
 Disallow: /Mily_wayz_website/Vendblue%20Logo.webp
@@ -8,5 +10,18 @@ Disallow: /Mily_wayz_website/design.gif
 Disallow: /Mily_wayz_website/cursolbig.webp
 Allow: /
 
-# Sitemap location
+# 2. Specific AI Crawler Invitations
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# 3. Sitemap location
 Sitemap: https://millise1.github.io/Mily_wayz_website/sitemap.xml
