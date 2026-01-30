@@ -1,0 +1,120 @@
+.gsap-reveal {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 627.9px){
+.milywayz-desktop {display: none}
+.notification-image-desktop {display: none;}
+}
+@media screen and (min-width: 628px){
+.milywayz{display: none! important;}
+.milywayz-desktop {clear: left; margin: auto; display: block; max-width: 100%; animation: FadeIn 2s ease-in;}
+.notification-image-desktop {display: block; max-width: 100%; animation: FadeIn 5s ease-in;}
+}
+@keyframes FadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/*for large devices*/
+@media screen and (min-width: 2000px){
+.milywayz-desktop {visibility: hidden;}
+.notification-image-desktop {visibility: hidden;}
+}
+
+.milywayz{clear: left; margin: auto; display: block; max-width: 100%;} 
+
+.LATEST {
+  font-size: 24px; color: rgb(201, 191, 10); text-align: center;
+  border-style: outset; border-color: hsl(0, 0%, 55%);
+}
+.main-section {color: white; border-bottom-style: solid; border-bottom-color: white; font-size: 6vw; margin: 20px; font-weight: 900;}
+.no-event {font-weight: 150; color: white; margin-left: 20px;}
+
+.container, .textbutton, .musicaudio {transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);}
+.container, .textbutton, .musicaudio, .musictitle, .button, .button2 {
+  transition: all 0.5s ease-in-out;
+}
+
+/*for large devices*/
+@media screen and (min-width: 700px){
+  .container{display: flex; flex-direction: row; align-items: center; gap: 30px; justify-content: center; flex-wrap: wrap;}
+  .textbutton{display: flex; flex-direction: column; align-items: center;}
+  .musicaudio{margin-left: 10px; margin-right: 40px; max-width: 100%; width: 40vw;}
+}
+.musictitle{font-size: 24px; text-align: center; max-width: 100%; margin-bottom: 20px;}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.button{
+  background-color: white; color: black;
+  border-radius: 25px; border-style: groove; width: 10em; height: 1.4em;
+  display: inline-flex; align-items: center; justify-content: center; text-align: center;
+  font-size: 24px; text-decoration: none; max-width: 100%; line-height: 1.2;
+  font-weight: 500; padding: 10px 20px; cursor: pointer; margin-bottom: 50px;
+}
+
+.button2{
+  background-color: black; color: white;
+  border: 2px solid white; width: 20em; height: 2.5em;
+  display: inline-flex; align-items: center; justify-content: center; 
+  font-size: 15px; text-decoration: none; max-width: 100%;
+}
+
+/*for large devices*/
+@media screen and (min-width: 700px){
+.musictitle{font-size: 3.43vw;}}
+@media screen and (min-width: 700px){
+.button{font-size: 3vw;}}
+@media screen and (min-width: 700px){
+.button2{font-size: 1.8vw;}} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

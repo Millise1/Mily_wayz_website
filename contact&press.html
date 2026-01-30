@@ -1,139 +1,150 @@
 <!DOCTYPE html>
 <html lang="en-NG">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact & Press | Mily Wayz Official</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-    
-    <meta name="description" content="Contact Mily Wayz for bookings, press inquiries, and collaborations. Reach out to the team today.">
-    <meta name="robots" content="index, follow">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact & Press | Mily Wayz Official</title>
+        <link rel="stylesheet" href="style/main-style.css">
+        <link rel="stylesheet" href="style/no-nav-style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
 
-    <style>
-        .contact-section {
-    padding: 20px 20px;
-    text-align: center;
-}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
 
-.contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: left;
-}
+        <meta name="description" content="Contact Mily Wayz for bookings, press inquiries, and collaborations. Reach out to the team today.">
+        <meta name="robots" content="index, follow">
+        <link rel="preload" href="style/main-style.css" as="style">
+        <link rel="preload" href="style/no-nav-style.css" as="style">
 
-.contact-form input, .contact-form select, .contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #fafafa;
-}
+        <style>
+            .contact-section {
+                padding: 20px 20px;
+                text-align: center;
+            }
 
-.submit-btn {
-    background: #000; /* Use Mily Wayz brand color */
-    color: #fff;
-    padding: 15px 40px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.3s;
-}
+            .contact-wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+                max-width: 1000px;
+                margin: 0 auto;
+                text-align: left;
+                overflow: hidden;
+            }
 
-.submit-btn:hover {
-    opacity: 0.8;
-}
+            .contact-form input, .contact-form select, .contact-form textarea {
+                width: 100%;
+                padding: 15px;
+                margin-bottom: 20px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                background: #fafafa;
+            }
 
-.contact-info a{
-    text-decoration: none;
-    color: hsl(275, 86%, 70%);
-}
+            .submit-btn {
+                background: #000; /* Use Mily Wayz brand color */
+                color: #fff;
+                padding: 15px 40px;
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
 
-.contact-info a:hover{
-    color: white;
-    text-decoration: underline;
-    transition: all 0.5s ease-in-out;    
-}
+            .submit-btn:hover {
+                opacity: 0.8;
+            }
 
-p{color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.1em;}
+            .contact-info a{
+                text-decoration: none;
+                color: hsl(275, 86%, 70%);
+            }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-    }
-}
-    </style>
+            .contact-info a:hover{
+                color: white;
+                text-decoration: underline;
+                transition: all 0.5s ease-in-out;    
+            }
 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
-</head>
-<body>
-    <header>
-        <div class="social-media-icons">
-                <a href="https://www.facebook.com/Milywayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Facebook profile">
+            .section-title, .contact-info-section{
+                color: #fff;
+            }
+            p{color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.1em;}
+
+            /* Mobile Responsive */
+            @media (max-width: 768px) {
+                .contact-wrapper {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <div class="social-media-icons" itemscope itemtype="https://schema.org/Person">
+                <meta itemprop="name" content="Mily wayz">
+                <a href="https://www.facebook.com/Milywayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Facebook profile">
                     <i class="ri-facebook-circle-fill"></i>
                 </a> 
-                <a href="https://x.com/likeitzmilli?s=09" target="_blank" rel="noopener noreferrer" title="Mily wayz X/Twitter profile">
+                <a href="https://x.com/likeitzmilli" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz X/Twitter profile">
                     <i class="ri-twitter-x-fill"></i>
                 </a>
-                <a href="https://www.instagram.com/mily_wayz?igsh=YjhvOGQ1dWh0cHB1" target="_blank" rel="noopener noreferrer" title="Mily wayz Instagram profile">
+                <a href="https://www.instagram.com/mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Instagram profile">
                     <i class="ri-instagram-line"></i>
                 </a>
-                <a href="https://www.tiktok.com/@mily_wayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Tiktok profile">
+                <a href="https://www.tiktok.com/@mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Tiktok profile">
                     <i class="ri-tiktok-fill"></i>
                 </a>
-                <a href="https://www.youtube.com/@likeitzmilli" target="_blank" rel="noopener noreferrer" title="Mily wayz Youtube profile">
+                <a href="https://www.youtube.com/@likeitzmilli" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Youtube profile">
                     <i class="ri-youtube-fill"></i>
                 </a>
-                <a href="https://www.threads.com/@mily_wayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Threads profile">
+                <a href="https://www.threads.com/@mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Threads profile">
                     <i class="ri-threads-line"></i>
                 </a>
             </div>
-        <a href="index.html" title="Home"><img class="Autograph2" id="Autograph2" src="Mily_Autograph 2.webp" fetchpriority="high" alt="Mily Wayz"></a>
-    </header>
-    
-    <main>
-        <section class="contact-section">
-        <div class="container">
-            <h1 class="section-title">Get In Touch</h1>
-            <p class="section-subtitle">For bookings, press, or just to say hello, use the form below or reach out via email.</p>
+            <a href="index.html" title="Home"><img class="Autograph2" id="Autograph2" src="image/autograph/Mily_Autograph 2.webp" fetchpriority="high" alt="Mily Wayz"></a>
+        </header>
+        
+        <main>
+            <section class="contact-section">
+                <div class="container">
+                    <h1 class="section-title">Get In Touch</h1>
+                    <p class="section-subtitle">For bookings, press, or just to say hello, use the form below or reach out via email.</p>
 
-            <div class="contact-wrapper">
-                <form action="https://formspree.io/f/mkogjevq" method="POST" class="contact-form">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="_replyto" placeholder="Your Email" required>
-                    
-                    <input type="text" name="_gotcha" style="display:none">
+                    <div class="contact-wrapper">
+                        <form action="https://formspree.io/f/mkogjevq" method="POST" class="contact-form">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="_replyto" placeholder="Your Email" required>
+                            
+                            <input type="text" name="_gotcha" style="display:none">
 
-                    <select name="subject">
-                        <option value="Booking">Booking Inquiry</option>
-                        <option value="Press">Press/Media</option>
-                        <option value="General">General Inquiry</option>
-                    </select>
-                    <textarea name="message" placeholder="How can we help?" rows="5" required></textarea>
-                    
-                    <input type="hidden" name="_next" value="https://millise1.github.io/Mily_wayz_website/">
+                            <select name="subject">
+                                <option value="Booking">Booking Inquiry</option>
+                                <option value="Press">Press/Media</option>
+                                <option value="General">General Inquiry</option>
+                            </select>
+                            <textarea name="message" placeholder="How can we help?" rows="5" required></textarea>
+                            
+                            <input type="hidden" name="_next" value="https://millise1.github.io/Mily_wayz_website/">
 
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
 
-                <div class="contact-info">
-                    <h3>Management & Press</h3>
-                    <p>For direct business inquiries, you may reach our office below:</p>
-                    <p><strong>Email:</strong> <a href="mailto:wezuduemoih@gmail.com?subject=Press Inquiry for Mily Wayz">wezuduemoih@gmail.com</a></p>
-                    <p><strong>Location:</strong> Lagos, Nigeria</p>
+                        <div class="contact-info">
+                            <h2 class="contact-info-section">Management & Press</h2>
+                            <p>For direct business inquiries, you may reach our office below:</p>
+                            <p><strong>Email:</strong> <a href="mailto:wezuduemoih@gmail.com?subject=Press Inquiry for Mily Wayz">wezuduemoih@gmail.com</a></p>
+                            <p><strong>Location:</strong> Lagos, Nigeria</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    </main>
-<script src="index.js" defer></script>
-</body>
+            </section>
+        </main>
+    </body>
 </html>

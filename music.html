@@ -1,265 +1,297 @@
 <!DOCTYPE html>
 <html lang="en-NG">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stream Mily Wayz Music | Latest Afrobeats Singles & Albums</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stream Mily Wayz Music | Latest Afrobeats Singles & Albums</title>
+        
+        <link rel="stylesheet" href="style/main-style.css">
+        <link rel="stylesheet" href="style/music-style.css">
+        <link rel="stylesheet" href="style/nav-style.css">
+        <link rel="stylesheet" href="style/footer-cookie-style.css">
+        <link rel="stylesheet" href="style/smoke-style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
 
-    <meta name="description" content="Listen to the latest music from Mily Wayz. Stream new Afrobeats singles, albums, and exclusive tracks. Experience the sound of Nigeria's rising star.">
-    <link rel="canonical" href="https://millise1.github.io/Mily_wayz_website/music.html">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Mily Wayz">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
 
-    <meta property="og:type" content="music.playlist"> <meta property="og:title" content="Mily Wayz Music - Stream Latest Hits">
-    <meta property="og:description" content="Experience the best of Afrobeats. Stream singles and albums by Mily Wayz.">
-    <meta property="og:url" content="https://millise1.github.io/Mily_wayz_website/music.html">
-    <meta property="og:image" content="https://millise1.github.io/Mily_wayz_website/og-image.png"> <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Stream Mily Wayz on Official Website">
-    <meta name="twitter:image" content="https://millise1.github.io/Mily_wayz_website/og-image.png">
+        <meta name="description" content="Listen to the latest music from Mily Wayz. Stream new Afrobeats singles, albums, and exclusive tracks. Experience the sound of Nigeria's rising star.">
+        <link rel="canonical" href="https://millise1.github.io/Mily_wayz_website/music.html">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Mily Wayz">
 
-    <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" as="script">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" as="script">
+        <meta property="og:type" content="music.playlist"> <meta property="og:title" content="Mily Wayz Music - Stream Latest Hits">
+        <meta property="og:description" content="Experience the best of Afrobeats. Stream singles and albums by Mily Wayz.">
+        <meta property="og:url" content="https://millise1.github.io/Mily_wayz_website/music.html">
+        <meta property="og:image" content="https://millise1.github.io/Mily_wayz_website/image/og-image/og-image.png"> <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Stream Mily Wayz on Official Website">
+        <meta name="twitter:image" content="https://millise1.github.io/Mily_wayz_website/image/og-image/og-image.png">
 
-    <style>
-        .gsap-reveal {
-            visibility: hidden;
-        }
-    </style>
+        <link rel="preload" href="style/main-style.css" as="style">
+        <link rel="preload" href="style/music-style.css" as="style">
+        <link rel="preload" href="style/nav-style.css" as="style">
+        <link rel="preload" href="style/footer-cookie-style.css" as="style">
+        <link rel="preload" href="style/smoke-style.css" as="style">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" as="script">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" as="script">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
-</head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    </head>
 
-<body class="content">
+    <body class="content">
         <header>
-            <div class="social-media-icons">
-                <a href="https://www.facebook.com/Milywayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Facebook profile">
+            <div class="social-media-icons" itemscope itemtype="https://schema.org/Person">
+                <meta itemprop="name" content="Mily wayz">
+                <a href="https://www.facebook.com/Milywayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Facebook profile">
                     <i class="ri-facebook-circle-fill"></i>
                 </a> 
-                <a href="https://x.com/likeitzmilli?s=09" target="_blank" rel="noopener noreferrer" title="Mily wayz X/Twitter profile">
+                <a href="https://x.com/likeitzmilli" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz X/Twitter profile">
                     <i class="ri-twitter-x-fill"></i>
                 </a>
-                <a href="https://www.instagram.com/mily_wayz?igsh=YjhvOGQ1dWh0cHB1" target="_blank" rel="noopener noreferrer" title="Mily wayz Instagram profile">
+                <a href="https://www.instagram.com/mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Instagram profile">
                     <i class="ri-instagram-line"></i>
                 </a>
-                <a href="https://www.tiktok.com/@mily_wayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Tiktok profile">
+                <a href="https://www.tiktok.com/@mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Tiktok profile">
                     <i class="ri-tiktok-fill"></i>
                 </a>
-                <a href="https://www.youtube.com/@likeitzmilli" target="_blank" rel="noopener noreferrer" title="Mily wayz Youtube profile">
+                <a href="https://www.youtube.com/@likeitzmilli" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Youtube profile">
                     <i class="ri-youtube-fill"></i>
                 </a>
-                <a href="https://www.threads.com/@mily_wayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Threads profile">
+                <a href="https://www.threads.com/@mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Threads profile">
                     <i class="ri-threads-line"></i>
                 </a>
             </div>
             <nav class="nav-container" id="nav-container">
                 <div class="nav-data" id="nav-data">
-                    <a href="index.html" title="Home"><img class="Autograph" 
-                        id="Autograph" src="Mily_Autograph 2.webp" fetchpriority="high" alt="Mily Wayz"></a>
+                    <a href="index.html" title="Home"><img class="Autograph2" 
+                        id="Autograph2" src="image/autograph/Mily_Autograph 2.webp" fetchpriority="high" alt="Mily Wayz"></a>
                     <div class="nav-toggle" id="nav-toggle" style="margin-top: 60px;">
                         <i class="ri-menu-line nav-burger"></i>
                         <i class="ri-close-line nav-close"></i>
                     </div>
                 </div>
-                <div class="nav-menu" id="nav-menu" style="margin-top: 140px;">
-                     <ul class="nav-list">
+                <div class="nav-menu" id="nav-menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <ul class="nav-list">
                         <li><a href="music.html" title="Mily Wayz Music" class="nav-link">Music</a></li>
 
                         <li><a href="video.html" title="Mily Wayz Video" class="nav-link">Video</a></li>
 
-                        <li><a href="https://bnds.us/v4l02y" title="Mily Wayz Tour Dates" target="_blank" rel="noopener noreferrer" class="nav-link">Live</a></li>
+                        <li><a href="https://bnds.us/v4l02y" itemprop="sameAs" title="Mily Wayz Tour Dates" target="_blank" rel="noopener noreferrer" class="nav-link"><span itemprop="name">Live</span></a></li>
 
                         <li><a href="merch.html" title="Mily Wayz Merch" class="nav-link">Merch</a></li>
 
-                        <li><a href="https://www.bandsintown.com/a/15621267" title="Join Mily Wayz Fan Club" target="_blank" rel="noopener noreferrer" class="nav-link">FanClub</a></li>
+                        <li><a href="https://www.bandsintown.com/a/15621267" itemprop="sameAs" title="Join Mily Wayz Fan Club" target="_blank" rel="noopener noreferrer" class="nav-link"><span itemprop="name">FanClub</span></a></li>
                     </ul>
                 </div>
             </nav>
-                
         </header><br>
 
-        <main class="1st-single gsap-reveal" id="1st-single">
-            <h3 style="border-bottom-style: solid; border-bottom-color: white;
-             font-size: 5vw; margin: 20px;"><big><b>Music</b></big></h3>
-            <div class="container">
-                <!--MUSIC COVER (CHANGABLE)-->
-                <img class="musicaudio" src="SAVAGE LOVE 1.webp" fetchpriority="high"
-                alt="Savage Love Cover" width="300" style="margin-left: 10px; max-width: 100%;">
+        <main class="gsap-reveal">
+            <h1 class="main-section">Music</h1>
                 
-            <div class="textbutton">
-                <!--MUSIC TITLE (CHANGABLE)-->
-                <h3 class="musictitle" id="musictitle"><b><!--CHANGE-->Savage Love<!--CHANGE--></b></h3>
+            <div class="container" itemscope itemtype="https://schema.org/MusicRecording">
+                <!--MUSIC COVER (CHANGABLE)-->
+                <img class="musicaudio" src="image/music-art/Hypnotize me.jpg" itemprop="image" fetchpriority="high"
+                    alt="Hypnotize me Cover Art by Mily Wayz" width="300px">
+                    
+                <div class="textbutton">
+                    <!--MUSIC TITLE (CHANGABLE)-->
+                    <h2 class="musictitle" id="musictitle" itemprop="name" style="color: #59bfff;">
+                        <!--CHANGE--><strong>Hypnotize me</strong><!--CHANGE-->
+                    </h2>
+                    <!--inAlbum content (CHANGABLE)-->   
+                    <meta itemprop="byArtist" content="Mily Wayz">
+                    <meta itemprop="genre" content="Afrobeats">
+                    <meta itemprop="inAlbum" content="Hypnotize me - Single">
 
-                <button class="button" id="button" style="width: 10em; height: 2em;">LISTEN</button><br><br>
-            </div>
-        </main><br><br><br>
-        
-        <footer>
-    <div class="footer-container">
-
-        <div class="footer-grid">
-
-            <div class="footer-column social gsap-reveal">
-                <h3>Stay Connected</h3>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/Milywayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Facebook profile">
-                        <i class="ri-facebook-circle-fill"></i>
-                    </a> 
-                    <a href="https://x.com/likeitzmilli?s=09" target="_blank" rel="noopener noreferrer" title="Mily wayz X/Twitter profile">
-                        <i class="ri-twitter-x-fill"></i>
-                    </a>
-                    <a href="https://www.instagram.com/mily_wayz?igsh=YjhvOGQ1dWh0cHB1" target="_blank" rel="noopener noreferrer" title="Mily wayz Instagram profile">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@mily_wayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Tiktok profile">
-                        <i class="ri-tiktok-fill"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@likeitzmilli" target="_blank" rel="noopener noreferrer" title="Mily wayz Youtube profile">
-                        <i class="ri-youtube-fill"></i>
-                    </a>
+                    <div class="btn">
+                        <a href="/#" rel="nofollow" class="button" id="button">COMING SOON</a>
+                    </div>    
                 </div>
+                <style>
+                    .button:hover{color: #59bfff; transition: all 0.3s ease-in-out;}
+                    .button:active{color: #59bfff;}
+                </style>
             </div>
+        </main>
+                    
+        <footer>
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-column social gsap-reveal">
+                        <h3>Stay Connected</h3>
+                        <div class="social-icons" itemscope itemtype="https://schema.org/Person">
+                            <meta itemprop="name" content="Mily wayz">
+                            <a href="https://www.facebook.com/Milywayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Facebook profile">
+                                <i class="ri-facebook-circle-fill"></i>
+                            </a> 
+                            <a href="https://x.com/likeitzmilli" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz X/Twitter profile">
+                                <i class="ri-twitter-x-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Instagram profile">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Tiktok profile">
+                                <i class="ri-tiktok-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@likeitzmilli" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Youtube profile">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
 
-            <div class="footer-column streaming gsap-reveal">
-                <h3>Listen Now</h3>
-                <ul class="streaming-links">
-                    <li><a href="https://open.spotify.com/artist/your_id" title="Mily wayz Spotify profile" target="_blank" rel="noopener">Spotify</a></li>
-                    <li><a href="https://music.apple.com/artist/your_id" title="Mily wayz Apple Music profile" target="_blank" rel="noopener">Apple Music</a></li>
-                    <li><a href="https://www.tidal.com/artist/your_id" title="Mily wayz Tidal profile" target="_blank" rel="noopener">Tidal</a></li>
-                    <li><a href="https://music.amazon.com/artists/your_id" title="Mily wayz Amazon Music profile" target="_blank" rel="noopener">Amazon Music</a></li>
-                    <li><a href="https://soundcloud.com/your_id" title="Mily wayz SoundCloud profile" target="_blank" rel="noopener">SoundCloud</a></li>
-                    <li><a href="https://music.youtube.com/channel/your_id" title="Mily wayz YouTube Music profile" target="_blank" rel="noopener">YouTube Music</a></li>
-                    <li><a href="https://www.boomplay.com/artists/your_id" title="Mily wayz Boomplay profile" target="_blank" rel="noopener">Boomplay</a></li>
-                    <li><a href="https://audiomack.com/your_id" title="Mily wayz Audiomack profile" target="_blank" rel="noopener">Audiomack</a></li>
-                </ul>
-            </div>
+                    <div class="footer-column streaming gsap-reveal">
+                        <h3>Listen Now</h3>
+                        <ul class="streaming-links">
+                            <li><a href="#/" rel="nofollow" title="YouTube - Coming Soon" class="coming-soon">YouTube Music</a></li>
+                            <li><a href="#/" rel="nofollow" title="Spotify - Coming Soon" class="coming-soon">Spotify</a></li>
+                            <li><a href="#/" rel="nofollow" title="Apple Music - Coming Soon" class="coming-soon">Apple Music</a></li>
+                            <li><a href="#/" rel="nofollow" title="Tidal - Coming Soon" class="coming-soon">Tidal</a></li>
+                            <li><a href="#/" rel="nofollow" title="Amazon Music - Coming Soon" class="coming-soon">Amazon Music</a></li>
+                            <li><a href="#/" rel="nofollow" title="SoundCloud - Coming Soon" class="coming-soon">SoundCloud</a></li>
+                            <li><a href="#/" rel="nofollow" title="Boomplay - Coming Soon" class="coming-soon">Boomplay</a></li>
+                            <li><a href="#/" rel="nofollow" title="Audiomack - Coming Soon" class="coming-soon">Audiomack</a></li>
+                        </ul>
+                        <style>
+                            /* Placeholder styling for inactive links */
+                            .coming-soon {
+                                opacity: 0.5;
+                                cursor: default;
+                                pointer-events: none; /* Prevents clicking */
+                                font-style: italic;
+                            }
 
-            <div class="footer-column links-signup gsap-reveal">
-                <h3>Quick Links</h3>
-                <ul class="quick-links">
-                    <li><a href="contact&press.html">Contact & Press</a></li>
-                    <li><a href="artist-bio.html">About Mily Ways</a></li>
-                    <li><a href="https://www.bandsintown.com/a/15621267" title="Join Mily Wayz Fan Club" target="_blank" rel="noopener noreferrer" class="nav-link">Fan Club</a></li>
-                </ul>        
-            </div>
-            <div class="email-signup gsap-reveal" style="margin-top: 10px;">
-                    <iframe 
-                        src="https://bandsintown.com/artist/15621267/email_signup_form?headerTextColor=rgba(255,255,255,1)&backgroundColor=transparent&ctaBackgroundColor=rgba(106,13,173,1)&title=Join the Mailing List&headerTextStyle=italic&headerText=Sign up to get the latest updates&font=Arial&ctaIcon=show&ctaBorderRadius=4px&ctaBorderWidth=0px&ctaBorderColor=rgba(106,13,173,1)&ctaFontColor=rgba(255,255,255,1)&alignment=left&emailInputField=show&ctaLabel=Submit&layout=narrow&locale=en&appId=Mily_wayz_website&ctaSize=large" 
-                        width="100%" 
-                        height="260" 
-                        style="border:none; overflow:hidden;" 
-                        loading="lazy"
-                        title="Mily Wayz Newsletter Signup">
-                    </iframe>
+                            .coming-soon::after {
+                                content: " (Soon)";
+                                font-size: 0.7em;
+                                vertical-align: middle;
+                            }
+                        </style>
+                    </div>
 
-                    <h5 class="disclaimer-text">
-                        By clicking 'Submit,' you agree to receive updates from Mily wayz. 
-                        Your email is managed by Bandsintown. We do not store your data on our site.
-                    </h5>
-            </div>      
-        </div> <hr class="footer-separator">
+                    <div class="footer-column links-signup gsap-reveal">
+                        <h3>Quick Links</h3>
+                        <ul class="quick-links" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                            <li><a href="contact&press.html">Contact & Press</a></li>
+                            <li><a href="artist-bio.html">About Mily Ways</a></li>
+                            <li><a href="https://www.bandsintown.com/a/15621267" itemprop="sameAs" title="Join Mily Wayz Fan Club" target="_blank" rel="noopener noreferrer" class="nav-link"><span itemprop="name">FanClub</span></a></li>
+                        </ul>        
+                    </div>
+                    <div class="email-signup gsap-reveal" style="margin-top: 10px;">
+                        <iframe 
+                            src="https://bandsintown.com/artist/15621267/email_signup_form?headerTextColor=rgba(255,255,255,1)&backgroundColor=transparent&ctaBackgroundColor=rgba(106,13,173,1)&title=Join the Mailing List&headerTextStyle=italic&headerText=Sign up to get the latest updates&font=Arial&ctaIcon=show&ctaBorderRadius=4px&ctaBorderWidth=0px&ctaBorderColor=rgba(106,13,173,1)&ctaFontColor=rgba(255,255,255,1)&alignment=left&emailInputField=show&ctaLabel=Submit&layout=narrow&locale=en&appId=Mily_wayz_website&ctaSize=large" 
+                            width="100%" 
+                            height="260" 
+                            style="border:none; overflow:hidden;" 
+                            loading="lazy"
+                            title="Mily Wayz Newsletter Signup">
+                        </iframe>
 
-        <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Mily Wayz. All Rights Reserved.</p>
-             <div>
-                This work is licensed under <a class="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
-            </div><br>
-            <div class="legal-links">
-                <a href="privacy-policy.html" target="_blank" title="Privacy Policy link">Privacy Policy</a> | 
-                <a href="tou.html" target="_blank" title="Terms of use link" >Terms of Use</a>
-            </div>
+                        <p class="disclaimer-text">
+                            By clicking 'Submit,' you agree to receive updates from Mily wayz. 
+                            Your email is managed by Bandsintown. We do not store your data on our site.
+                        </p>
+                    </div>      
+                </div> <hr class="footer-separator">
+
+                <div class="footer-bottom">
+                    <p>&copy; <span id="year"></span> Mily Wayz. All Rights Reserved.</p>
+                    <div>
+                        This work is licensed under <a class="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
+                    </div><br>
+                    <div class="legal-links">
+                        <a href="privacy-policy.html" target="_blank" title="Privacy Policy link">Privacy Policy</a> | 
+                        <a href="tou.html" target="_blank" title="Terms of use link" >Terms of Use</a>
+                    </div>
+                </div>
+            </div> 
+        </footer>
+        <div id="cookie-banner" class="cookie-notification hidden">
+            <p>
+                This website doesn't use cookies to track your activity. However, third-party links like those for Bandsintown, YouTube, may use cookies for their own purposes.
+            </p>
+            <button id="accept-cookies-btn">Ok</button>
         </div>
+        <script src="script/nav.js" defer></script>
+        <script src="script/index.js" defer></script>
 
-    </div> </footer>
-    <div id="cookie-banner" class="cookie-notification hidden">
-        <p>
-            This website doesn't use cookies to track your activity. However, third-party links like those for Bandsintown, YouTube, may use cookies for their own purposes.
-        </p>
-        <button id="accept-cookies-btn">Ok</button>
-    </div>
-    <script src="nav.js" defer></script>
-    <script src="index.js" defer></script>
+        <script>
+        // Even at the bottom, we wait for the external GSAP scripts (defer) 
+            // to finish by using a small check or DOMContentLoaded
+            document.addEventListener("DOMContentLoaded", () => {
+                gsap.registerPlugin(ScrollTrigger);
 
-    <script>
-    // Even at the bottom, we wait for the external GSAP scripts (defer) 
-        // to finish by using a small check or DOMContentLoaded
-        document.addEventListener("DOMContentLoaded", () => {
-            gsap.registerPlugin(ScrollTrigger);
+                // Immediately make visible so GSAP can take control
+                gsap.set(".gsap-reveal", { visibility: "visible" });
 
-            // Immediately make visible so GSAP can take control
-            gsap.set(".gsap-reveal", { visibility: "visible" });
-
-            // --- 1. MUSIC SECTION REVEAL ---
-            // Targets the "Savage Love" image and text
-            gsap.from(".musicaudio", {
-                scrollTrigger: {
-                    trigger: ".musicaudio",
-                    start: "top 90%", // Triggers when the image is near the bottom
-                },
-                x: -100,
-                opacity: 0,
-                duration: 1,
-                ease: "power2.out"
-            });
-
-            gsap.from(".textbutton", {
-                scrollTrigger: {
-                    trigger: ".textbutton",
-                    start: "top 90%",
-                },
-                y: 50,
-                opacity: 0,
-                duration: 1,
-                delay: 0.2
-            });
-
-            // --- 2. SECTION HEADERS (Music) ---
-            gsap.utils.toArray("main h3").forEach(heading => {
-                gsap.from(heading, {
+                // --- 1. MUSIC SECTION REVEAL ---
+                // Targets the "Savage Love" image and text
+                gsap.from(".musicaudio", {
                     scrollTrigger: {
-                        trigger: heading,
+                        trigger: ".musicaudio",
+                        start: "top 90%", // Triggers when the image is near the bottom
+                    },
+                    x: -100,
+                    opacity: 0,
+                    duration: 1,
+                    ease: "power2.out"
+                });
+
+                gsap.from(".textbutton", {
+                    scrollTrigger: {
+                        trigger: ".textbutton",
+                        start: "top 90%",
+                    },
+                    y: 50,
+                    opacity: 0,
+                    duration: 1,
+                    delay: 0.2
+                });
+
+                // --- 2. SECTION HEADERS (Music) ---
+                gsap.utils.toArray("main h1").forEach(heading => {
+                    gsap.from(heading, {
+                        scrollTrigger: {
+                            trigger: heading,
+                            start: "top 95%",
+                        },
+                        opacity: 0,
+                        scale: 0.9,
+                        duration: 0.8
+                    });
+                });
+
+                // --- 3. FOOTER COLUMNS STAGGER ---
+                gsap.from(".footer-column", {
+                    scrollTrigger: {
+                        trigger: ".footer-grid",
                         start: "top 95%",
                     },
                     opacity: 0,
-                    scale: 0.9,
-                    duration: 0.8
+                    y: 30,
+                    stagger: 0.2,
+                    duration: 0.8,
+                    ease: "power2.out"
+                });
+
+                // --- 4. MAILING LIST IFRAME ---
+                gsap.from(".email-signup", {
+                    scrollTrigger: {
+                        trigger: ".email-signup",
+                        start: "top 95%",
+                    },
+                    opacity: 0,
+                    duration: 1.2
                 });
             });
-
-            // --- 3. FOOTER COLUMNS STAGGER ---
-            gsap.from(".footer-column", {
-                scrollTrigger: {
-                    trigger: ".footer-grid",
-                    start: "top 95%",
-                },
-                opacity: 0,
-                y: 30,
-                stagger: 0.2,
-                duration: 0.8,
-                ease: "power2.out"
-            });
-
-            // --- 4. MAILING LIST IFRAME ---
-            gsap.from(".email-signup", {
-                scrollTrigger: {
-                    trigger: ".email-signup",
-                    start: "top 95%",
-                },
-                opacity: 0,
-                duration: 1.2
-            });
-        });
-    </script>
-</body>
-
+        </script>
+    </body>
 </html>
 
 

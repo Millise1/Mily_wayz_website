@@ -1,244 +1,285 @@
 <!DOCTYPE html>
 <html lang="en-NG">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Mily Wayz Official Merch | Exclusive Apparel & Accessories</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop Mily Wayz Official Merch | Exclusive Apparel & Accessories</title>
+        
+        <link rel="stylesheet" href="style/main-style.css">
+        <link rel="stylesheet" href="style/no-nav-style.css">
+        <link rel="stylesheet" href="style/footer-cookie-style.css">
+        <link rel="stylesheet" href="style/smoke-style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
 
-    <meta name="description" content="Get the latest Mily Wayz official merchandise. Exclusive hoodies, tees, and accessories. Rep the Afrobeats sound with premium quality gear.">
-    <link rel="canonical" href="https://millise1.github.io/Mily_wayz_website/merch.html">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Mily Wayz">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Mily Wayz Official Store - Shop the Collection">
-    <meta property="og:description" content="Exclusive Mily Wayz apparel and accessories available now. Limited edition drops.">
-    <meta property="og:url" content="https://millise1.github.io/Mily_wayz_website/merch.html">
-    <meta property="og:image" content="https://millise1.github.io/Mily_wayz_website/merch-banner.png"> <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mily Wayz Merch Store">
-    <meta name="twitter:image" content="https://millise1.github.io/Mily_wayz_website/merch-banner.png">
+        <meta name="description" content="Get the latest Mily Wayz official merchandise. Exclusive hoodies, tees, and accessories. Rep the Afrobeats sound with premium quality gear.">
+        <link rel="canonical" href="https://millise1.github.io/Mily_wayz_website/merch.html">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Mily Wayz">
+        <meta name="product_availability" content="coming_soon"><!--BEFORE PRODUCT-->
 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" as="script">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" as="script">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Mily Wayz Official Store - Shop the Collection">
+        <meta property="og:description" content="Exclusive Mily Wayz apparel and accessories available now. Limited edition drops.">
+        <meta property="og:url" content="https://millise1.github.io/Mily_wayz_website/merch.html">
+        <meta property="og:image" content="https://millise1.github.io/Mily_wayz_website/image/og-image/merch-banner.png"> <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Mily Wayz Merch Store">
+        <meta name="twitter:image" content="https://millise1.github.io/Mily_wayz_website/image/og-image/merch-banner.png">
 
-    <style>
-        .gsap-reveal {
-            visibility: hidden;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="preload" href="style/main-style.css" as="style">
+        <link rel="preload" href="style/no-nav-style.css" as="style">
+        <link rel="preload" href="style/footer-cookie-style.css" as="style">
+        <link rel="preload" href="style/smoke-style.css" as="style">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" as="script">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" as="script">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
-</head>
+        <style>
+            .gsap-reveal {
+                visibility: hidden;
+            }
+            .main-section {
+                color: white; border-bottom-style: solid; font-weight: 900;
+                border-bottom-color: white; font-size: 6vw; margin: 20px;
+            }
+            .merch-store{
+                display: flexbox;
+                align-items: center;
+                justify-items: center;
+            }
+            .merch-item img {
+                width: 50vw; max-width: 500px;
+                transition: transform 0.3s ease, filter 0.3s ease;
+            }
+            .merch-item img:hover {
+                transform: scale(1.1); /* Grows slightly */
+                filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5)); /* White glow */
+            }
+        </style>
 
-<body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    </head>
+
+    <body>
         <header>
-           <div class="social-media-icons">
-                <a href="https://www.facebook.com/Milywayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Facebook profile">
+            <div class="social-media-icons" itemscope itemtype="https://schema.org/Person">
+                <meta itemprop="name" content="Mily wayz">
+                <a href="https://www.facebook.com/Milywayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Facebook profile">
                     <i class="ri-facebook-circle-fill"></i>
                 </a> 
-                <a href="https://x.com/likeitzmilli?s=09" target="_blank" rel="noopener noreferrer" title="Mily wayz X/Twitter profile">
+                <a href="https://x.com/likeitzmilli" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz X/Twitter profile">
                     <i class="ri-twitter-x-fill"></i>
                 </a>
-                <a href="https://www.instagram.com/mily_wayz?igsh=YjhvOGQ1dWh0cHB1" target="_blank" rel="noopener noreferrer" title="Mily wayz Instagram profile">
+                <a href="https://www.instagram.com/mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Instagram profile">
                     <i class="ri-instagram-line"></i>
                 </a>
-                <a href="https://www.tiktok.com/@mily_wayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Tiktok profile">
+                <a href="https://www.tiktok.com/@mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Tiktok profile">
                     <i class="ri-tiktok-fill"></i>
                 </a>
-                <a href="https://www.youtube.com/@likeitzmilli" target="_blank" rel="noopener noreferrer" title="Mily wayz Youtube profile">
+                <a href="https://www.youtube.com/@likeitzmilli" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Youtube profile">
                     <i class="ri-youtube-fill"></i>
                 </a>
-                <a href="https://www.threads.com/@mily_wayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Threads profile">
+                <a href="https://www.threads.com/@mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Threads profile">
                     <i class="ri-threads-line"></i>
                 </a>
             </div>
-           <a href="index.html" title="Home"><img class="Autograph2" id="Autograph2" src="Mily_Autograph 2.webp" fetchpriority="high" alt="Mily Wayz"></a>
+            <a href="index.html" title="Home"><img class="Autograph2" id="Autograph2" src="image/autograph/Mily_Autograph 2.webp" fetchpriority="high" alt="Mily Wayz"></a>
         </header><br>
 
         <main class="merch-section gsap-reveal">
-            <h3 class="merch-title" style="border-bottom-style: solid; border-bottom-color: white; font-size: 5vw; margin: 20px;">
-                Merch Store
-            </h3><br><br>
+                <h1 class="merch-title main-section">Merch Store</h1><br><br>
 
-            <div class="merch-store" style="text-align: center;">
-                <div class="merch-item amazon">
-                    <a href="loading.html" target="_blank" title="Location: US, UK, EU, Japan, etc">
-                        <img src="Amazon-Merch-Logo.webp" alt="Amazon Merch" style="width: 30vw;">
-                    </a>
-                </div><br><br><br>
+                <div class="merch-store">
+                    <div class="merch-item amazon">
+                        <a href="loading.html" target="_blank" title="Location: US, UK, EU, Japan, etc">
+                            <img src="image/merch-logo/Amazon-Merch-Logo.webp" alt="Official Merch and Apparel: Shop Mily wayz Official Hoodies and Tees on Amazon.">
+                        </a>
+                    </div><br><br><br>
 
-                <div class="merch-item vendblue">
-                    <a href="loading.html" target="_blank" title="Location: Nigeria, and other African countries">
-                        <img src="Vendblue Logo.webp" alt="Vendblue Merch" style="width: 30vw;">
-                    </a>
-                </div><br><br><br>
-            </div>
+                    <div class="merch-item vendblue">
+                        <a href="loading.html" target="_blank" title="Location: Nigeria, and other African countries">
+                            <img src="image/merch-logo/Vendblue Logo.webp" alt="Official Merch and Apparel: Shop Mily wayz Official Hoodies and Tees on Vendblue.">
+                        </a>
+                    </div><br><br><br>
+                </div>
         </main>
 
         <footer>
-    <div class="footer-container">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-column social gsap-reveal">
+                        <h2>Stay Connected</h2>
+                        <div class="social-icons" itemscope itemtype="https://schema.org/Person">
+                            <meta itemprop="name" content="Mily wayz">
+                            <a href="https://www.facebook.com/Milywayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Facebook profile">
+                                <i class="ri-facebook-circle-fill"></i>
+                            </a> 
+                            <a href="https://x.com/likeitzmilli" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz X/Twitter profile">
+                                <i class="ri-twitter-x-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Instagram profile">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@mily_wayz" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Tiktok profile">
+                                <i class="ri-tiktok-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@likeitzmilli" itemprop="sameAs" target="_blank" rel="noopener noreferrer" title="Mily wayz Youtube profile">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
 
-        <div class="footer-grid">
+                    <div class="footer-column streaming gsap-reveal">
+                        <h2>Listen Now</h2>
+                        <ul class="streaming-links">
+                            <li><a href="#/" rel="nofollow" title="YouTube - Coming Soon" class="coming-soon">YouTube Music</a></li>
+                            <li><a href="#/" rel="nofollow" title="Spotify - Coming Soon" class="coming-soon">Spotify</a></li>
+                            <li><a href="#/" rel="nofollow" title="Apple Music - Coming Soon" class="coming-soon">Apple Music</a></li>
+                            <li><a href="#/" rel="nofollow" title="Tidal - Coming Soon" class="coming-soon">Tidal</a></li>
+                            <li><a href="#/" rel="nofollow" title="Amazon Music - Coming Soon" class="coming-soon">Amazon Music</a></li>
+                            <li><a href="#/" rel="nofollow" title="SoundCloud - Coming Soon" class="coming-soon">SoundCloud</a></li>
+                            <li><a href="#/" rel="nofollow" title="Boomplay - Coming Soon" class="coming-soon">Boomplay</a></li>
+                            <li><a href="#/" rel="nofollow" title="Audiomack - Coming Soon" class="coming-soon">Audiomack</a></li>
+                        </ul>
+                        <style>
+                            /* Placeholder styling for inactive links */
+                            .coming-soon {
+                                opacity: 0.5;
+                                cursor: default;
+                                pointer-events: none; /* Prevents clicking */
+                                font-style: italic;
+                            }
 
-            <div class="footer-column social gsap-reveal">
-                <h3>Stay Connected</h3>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/Milywayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Facebook profile">
-                        <i class="ri-facebook-circle-fill"></i>
-                    </a> 
-                    <a href="https://x.com/likeitzmilli?s=09" target="_blank" rel="noopener noreferrer" title="Mily wayz X/Twitter profile">
-                        <i class="ri-twitter-x-fill"></i>
-                    </a>
-                    <a href="https://www.instagram.com/mily_wayz?igsh=YjhvOGQ1dWh0cHB1" target="_blank" rel="noopener noreferrer" title="Mily wayz Instagram profile">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@mily_wayz" target="_blank" rel="noopener noreferrer" title="Mily wayz Tiktok profile">
-                        <i class="ri-tiktok-fill"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@likeitzmilli" target="_blank" rel="noopener noreferrer" title="Mily wayz Youtube profile">
-                        <i class="ri-youtube-fill"></i>
-                    </a>
+                            .coming-soon::after {
+                                content: " (Soon)";
+                                font-size: 0.7em;
+                                vertical-align: middle;
+                            }
+                        </style>
+                    </div>
+
+                    <div class="footer-column links-signup gsap-reveal">
+                        <h2>Quick Links</h2>
+                        <ul class="quick-links" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                            <li><a href="contact&press.html">Contact & Press</a></li>
+                            <li><a href="artist-bio.html">About Mily Ways</a></li>
+                            <li><a href="https://www.bandsintown.com/a/15621267" itemprop="sameAs" title="Join Mily Wayz Fan Club" target="_blank" rel="noopener noreferrer" class="nav-link"><span itemprop="name">FanClub</span></a></li>
+                        </ul>        
+                    </div>
+                    <div class="email-signup gsap-reveal" style="margin-top: 10px;">
+                            <iframe 
+                                src="https://bandsintown.com/artist/15621267/email_signup_form?headerTextColor=rgba(255,255,255,1)&backgroundColor=transparent&ctaBackgroundColor=rgba(106,13,173,1)&title=Join the Mailing List&headerTextStyle=italic&headerText=Sign up to get the latest updates&font=Arial&ctaIcon=show&ctaBorderRadius=4px&ctaBorderWidth=0px&ctaBorderColor=rgba(106,13,173,1)&ctaFontColor=rgba(255,255,255,1)&alignment=left&emailInputField=show&ctaLabel=Submit&layout=narrow&locale=en&appId=Mily_wayz_website&ctaSize=large" 
+                                width="100%" 
+                                height="260" 
+                                style="border:none; overflow:hidden;" 
+                                loading="lazy"
+                                title="Mily Wayz Newsletter Signup">
+                            </iframe>
+
+                            <p class="disclaimer-text">
+                                By clicking 'Submit,' you agree to receive updates from Mily wayz. 
+                                Your email is managed by Bandsintown. We do not store your data on our site.
+                            </p>
+                    </div>      
+                </div> <hr class="footer-separator">
+
+                <div class="footer-bottom">
+                    <p>&copy; <span id="year"></span> Mily Wayz. All Rights Reserved.</p>
+                    <div>
+                        This work is licensed under <a class="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
+                    </div><br>
+                    <div class="legal-links">
+                        <a href="privacy-policy.html" target="_blank" title="Privacy Policy link">Privacy Policy</a> | 
+                        <a href="tou.html" target="_blank" title="Terms of use link" >Terms of Use</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="footer-column streaming gsap-reveal">
-                <h3>Listen Now</h3>
-                <ul class="streaming-links">
-                    <li><a href="https://open.spotify.com/artist/your_id" title="Mily wayz Spotify profile" target="_blank" rel="noopener">Spotify</a></li>
-                    <li><a href="https://music.apple.com/artist/your_id" title="Mily wayz Apple Music profile" target="_blank" rel="noopener">Apple Music</a></li>
-                    <li><a href="https://www.tidal.com/artist/your_id" title="Mily wayz Tidal profile" target="_blank" rel="noopener">Tidal</a></li>
-                    <li><a href="https://music.amazon.com/artists/your_id" title="Mily wayz Amazon Music profile" target="_blank" rel="noopener">Amazon Music</a></li>
-                    <li><a href="https://soundcloud.com/your_id" title="Mily wayz SoundCloud profile" target="_blank" rel="noopener">SoundCloud</a></li>
-                    <li><a href="https://music.youtube.com/channel/your_id" title="Mily wayz YouTube Music profile" target="_blank" rel="noopener">YouTube Music</a></li>
-                    <li><a href="https://www.boomplay.com/artists/your_id" title="Mily wayz Boomplay profile" target="_blank" rel="noopener">Boomplay</a></li>
-                    <li><a href="https://audiomack.com/your_id" title="Mily wayz Audiomack profile" target="_blank" rel="noopener">Audiomack</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column links-signup gsap-reveal">
-                <h3>Quick Links</h3>
-                <ul class="quick-links">
-                    <li><a href="contact&press.html">Contact & Press</a></li>
-                    <li><a href="artist-bio.html">About Mily Ways</a></li>
-                    <li><a href="https://www.bandsintown.com/a/15621267" title="Join Mily Wayz Fan Club" target="_blank" rel="noopener noreferrer" class="nav-link">Fan Club</a></li>
-                </ul>        
-            </div>
-            <div class="email-signup gsap-reveal" style="margin-top: 10px;">
-                    <iframe 
-                        src="https://bandsintown.com/artist/15621267/email_signup_form?headerTextColor=rgba(255,255,255,1)&backgroundColor=transparent&ctaBackgroundColor=rgba(106,13,173,1)&title=Join the Mailing List&headerTextStyle=italic&headerText=Sign up to get the latest updates&font=Arial&ctaIcon=show&ctaBorderRadius=4px&ctaBorderWidth=0px&ctaBorderColor=rgba(106,13,173,1)&ctaFontColor=rgba(255,255,255,1)&alignment=left&emailInputField=show&ctaLabel=Submit&layout=narrow&locale=en&appId=Mily_wayz_website&ctaSize=large" 
-                        width="100%" 
-                        height="260" 
-                        style="border:none; overflow:hidden;" 
-                        loading="lazy"
-                        title="Mily Wayz Newsletter Signup">
-                    </iframe>
-
-                    <h5 class="disclaimer-text">
-                        By clicking 'Submit,' you agree to receive updates from Mily wayz. 
-                        Your email is managed by Bandsintown. We do not store your data on our site.
-                    </h5>
-            </div>      
-        </div> <hr class="footer-separator">
-
-        <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Mily Wayz. All Rights Reserved.</p>
-             <div>
-                This work is licensed under <a class="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
-            </div><br>
-            <div class="legal-links">
-                <a href="privacy-policy.html" target="_blank" title="Privacy Policy link">Privacy Policy</a> | 
-                <a href="tou.html" target="_blank" title="Terms of use link" >Terms of Use</a>
-            </div>
+            </div> 
+        </footer>
+        <div id="cookie-banner" class="cookie-notification hidden">
+            <p>
+                This website doesn't use cookies to track your activity. However, third-party links like those for Bandsintown, YouTube, may use cookies for their own purposes.
+            </p>
+            <button id="accept-cookies-btn">Ok</button>
         </div>
-    </div> </footer>
-   <div id="cookie-banner" class="cookie-notification hidden">
-        <p>
-            This website doesn't use cookies to track your activity. However, third-party links like those for Bandsintown, YouTube, may use cookies for their own purposes.
-        </p>
-        <button id="accept-cookies-btn">Ok</button>
-    </div>
-    <script src="index.js" defer></script>
-    
-    <script>
-    // Even at the bottom, we wait for the external GSAP scripts (defer) 
-        // to finish by using a small check or DOMContentLoaded
-        document.addEventListener("DOMContentLoaded", () => {
-            gsap.registerPlugin(ScrollTrigger);
+        <script src="script/index.js" defer></script>
+        
+        <script>
+        // Even at the bottom, we wait for the external GSAP scripts (defer) 
+            // to finish by using a small check or DOMContentLoaded
+            document.addEventListener("DOMContentLoaded", () => {
+                gsap.registerPlugin(ScrollTrigger);
 
-            // Immediately make visible so GSAP can take control
-            gsap.set(".gsap-reveal", { visibility: "visible" });
+                // Immediately make visible so GSAP can take control
+                gsap.set(".gsap-reveal", { visibility: "visible" });
 
-            // 1. Animate the Header Title
-            gsap.from(".merch-title", {
-                scrollTrigger: {
-                    trigger: ".merch-title",
-                    start: "top 90%",
-                },
-                opacity: 0,
-                x: -30,
-                duration: 1,
-                ease: "power2.out"
+                // 1. Animate the Header Title
+                gsap.from(".merch-title", {
+                    scrollTrigger: {
+                        trigger: ".merch-title",
+                        start: "top 90%",
+                    },
+                    opacity: 0,
+                    x: -30,
+                    duration: 1,
+                    ease: "power2.out"
+                });
+
+                // 2. Animate Amazon Logo (Slide from Left)
+                gsap.from(".merch-item.amazon", {
+                    scrollTrigger: {
+                        trigger: ".merch-item.amazon",
+                        start: "top 85%",
+                    },
+                    opacity: 0,
+                    x: -100, // Slides in from left
+                    duration: 1.2,
+                    ease: "back.out(1.7)" // Adds a slight bounce
+                });
+
+                // 3. Animate Vendblue Logo (Slide from Right)
+                gsap.from(".merch-item.vendblue", {
+                    scrollTrigger: {
+                        trigger: ".merch-item.vendblue",
+                        start: "top 85%",
+                    },
+                    opacity: 0,
+                    x: 100, // Slides in from right
+                    duration: 1.2,
+                    delay: 0.2, // Slight delay so they don't hit at the exact same time
+                    ease: "back.out(1.7)"
+                });
+                // --- 4. FOOTER COLUMNS STAGGER ---
+                gsap.from(".footer-column", {
+                    scrollTrigger: {
+                        trigger: ".footer-grid",
+                        start: "top 95%",
+                    },
+                    opacity: 0,
+                    y: 30,
+                    stagger: 0.2,
+                    duration: 0.8,
+                    ease: "power2.out"
+                });
+
+                // --- 5. MAILING LIST IFRAME ---
+                gsap.from(".email-signup", {
+                    scrollTrigger: {
+                        trigger: ".email-signup",
+                        start: "top 95%",
+                    },
+                    opacity: 0,
+                    duration: 1.2
+                });
             });
-
-            // 2. Animate Amazon Logo (Slide from Left)
-            gsap.from(".merch-item.amazon", {
-                scrollTrigger: {
-                    trigger: ".merch-item.amazon",
-                    start: "top 85%",
-                },
-                opacity: 0,
-                x: -100, // Slides in from left
-                duration: 1.2,
-                ease: "back.out(1.7)" // Adds a slight bounce
-            });
-
-            // 3. Animate Vendblue Logo (Slide from Right)
-            gsap.from(".merch-item.vendblue", {
-                scrollTrigger: {
-                    trigger: ".merch-item.vendblue",
-                    start: "top 85%",
-                },
-                opacity: 0,
-                x: 100, // Slides in from right
-                duration: 1.2,
-                delay: 0.2, // Slight delay so they don't hit at the exact same time
-                ease: "back.out(1.7)"
-            });
-            // --- 4. FOOTER COLUMNS STAGGER ---
-            gsap.from(".footer-column", {
-                scrollTrigger: {
-                    trigger: ".footer-grid",
-                    start: "top 95%",
-                },
-                opacity: 0,
-                y: 30,
-                stagger: 0.2,
-                duration: 0.8,
-                ease: "power2.out"
-            });
-
-            // --- 5. MAILING LIST IFRAME ---
-            gsap.from(".email-signup", {
-                scrollTrigger: {
-                    trigger: ".email-signup",
-                    start: "top 95%",
-                },
-                opacity: 0,
-                duration: 1.2
-            });
-        });
-    </script>
-</body>
-
+        </script>
+    </body>
 </html>
 
 

@@ -1,0 +1,23 @@
+*{-webkit-tap-highlight-color: transparent; -moz-tap-highlight-color: transparent;}
+*::selection {background-color: transparent; color: rgb(201, 191, 10);}
+body{cursor: url(cursolbig.webp), default;}
+*{font-family: 'Montserrat';}
+body {
+  background-color: black; margin: 0px; padding-left: 2px; padding-right: 2px;
+  padding-bottom: 2px; overflow-x: hidden; min-height: 100vh; border-left: 5px dashed;
+  border-right: 5px dashed; border-bottom: 5px dashed; box-sizing: border-box;
+  border-image: linear-gradient(45deg, red, blue, green) 1;
+}
+.social-media-icons{
+  display: flex; justify-content: space-around; justify-self: auto;
+  border-bottom-color: white; border-style: solid; position: fixed;
+  background-color: black; width: 96%; z-index: 2;
+}
+.social-media-icons a{margin: 10px; text-decoration: none;}
+.social-media-icons i{
+  color: white; font-size: 30px; vertical-align: middle;
+  transition: transform 0.3s ease;}
+.social-media-icons i:hover {
+  transform: scale(1.1);
+  color: #a0a0a0;
+}

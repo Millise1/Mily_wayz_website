@@ -1,13 +1,13 @@
 # 1. Global Rules - Apply to all bots
 User-agent: *
 # Images/Files you don't want showing up in search results
-Disallow: /Mily_wayz_website/Mily-Autograph-_1_.webp
-Disallow: /Mily_wayz_website/Mily_Autograph%202.webp
-Disallow: /Mily_wayz_website/Vendblue%20Logo.webp
-Disallow: /Mily_wayz_website/Amazon-Merch-Logo.webp
-Disallow: /Mily_wayz_website/merch-banner.png
-Disallow: /Mily_wayz_website/design.gif
-Disallow: /Mily_wayz_website/cursolbig.webp
+Disallow: /Mily_wayz_website/image/autograph/Mily_Autograph%202.webp
+Disallow: /Mily_wayz_website/image/merch-logo/Amazon-Merch-Logo.webp
+Disallow: /Mily_wayz_website/image/merch-logo/Vendblue%20Logo.webp
+Disallow: /Mily_wayz_website/image/notification/notification.png
+Disallow: /Mily_wayz_website//image/og-image/merch-banner.png
+Disallow: /Mily_wayz_website/style/design.gif
+Disallow: /Mily_wayz_website/style/cursolbig.webp
 Allow: /
 
 # 2. Specific AI Crawler Invitations

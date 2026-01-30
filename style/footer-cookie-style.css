@@ -1,0 +1,216 @@
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #000;
+  color: #f0f0f0;
+ 
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h2, h3 {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a,
+.footer-column .social-icons a{
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover,
+.footer-column .social-icons a:hover {
+  color: #a0a0a0;
+  transform: translateX(5px); /* Subtle slide effect */
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+  font-size: 28px;
+}
+
+
+.footer-separator {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 40px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85em;
+  color: #a0a0a0;
+}
+
+.footer-bottom p {
+  margin-bottom: 10px;
+}
+
+.footer-bottom .legal-links a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom .legal-links a:hover {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 90%;
+    min-width: unset;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 30px 15px;
+  }
+
+  .footer-column h2, h3 {
+    font-size: 1.1em;
+  }
+
+  .footer-column ul li a,
+  .footer-column .social-icons a {
+    font-size: 0.9em;
+  }
+
+  .social-icons {
+    font-size: 1.5em;
+  }
+}
+
+.streaming-links li a {
+    display: inline-block;
+    padding: 2px 0;
+    transition: all 0.3s ease;
+}
+
+
+.quick-links li a {
+    display: inline-block;
+    padding: 2px 0;
+    transition: all 0.3s ease;
+}
+
+
+.email-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns with the 'Quick Links' text above it */
+}
+
+/* Fixes the spacing for the small disclaimer text */
+.disclaimer-text {
+    font-size: 0.75em;
+    font-weight: 600;
+    color: #a0a0a0;
+    line-height: 1.4;
+    margin-top: -10px; /* Pulls text closer to the iframe button */
+    padding: 0 5px;
+}
+
+/* Ensure the iframe doesn't create a scrollbar on mobile */
+@media (max-width: 768px) {
+    .email-signup {
+        align-items: center;
+        text-align: center;
+    }
+}
+.license{
+    text-decoration: none;
+    color: hsl(275, 86%, 70%);
+}
+
+.license:hover{
+    color: #a0a0a0;
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+}
+
+/* --- Cookie Notification Styles --- */
+.cookie-notification {
+    position: fixed; 
+    bottom: 20px; /* Lifted slightly off the bottom for a "floating" look */
+    left: 50%;        
+    width: 90%;    
+    max-width: 800px; /* Prevents it from being too wide on desktops */
+    transform: translateX(-50%) translateY(0); /* Centers horizontally */
+    background-color: #333;
+    border-radius: 10px; 
+    /* ... rest of your code ... */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* Updated hidden state to maintain horizontal centering while sliding down */
+#cookie-banner.hidden {
+    transform: translateX(-50%) translateY(150%); 
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cookie-notification p {
+    margin: 0;
+    font-size: 14px;
+    flex-grow: 1;
+    color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px; 
+}
+
+.cookie-notification button {
+    background-color: #6a0dad; /* A nice light blue/info color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 8px; 
+    transition: background-color 0.3s;
+}
+
+.cookie-notification button:hover {
+    background-color: #8a2be2;
+}

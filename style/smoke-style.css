@@ -1,0 +1,25 @@
+/* White Smoke*/
+.smoke-particle {
+    position: fixed;
+    z-index: 1000;
+    width: 20px;
+    height: 20px;
+    background: rgba(200, 200, 200, 0.5); /* Semi-transparent gray */
+    border-radius: 50%; /* Makes it circular */
+    pointer-events: none; /* Prevents it from interfering with clicks */
+    animation: smoke-puff 1.5s ease-out forwards;
+}
+
+@keyframes smoke-puff {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(0.5);
+        filter: blur(5px);
+    }
+    100% {
+        opacity: 0;
+        /* Move upwards and slightly outwards, adjust values for effect */
+        transform: translate(calc(var(--randX) * 100px), -150px) scale(1.5); 
+        filter: blur(10px);
+    }
+}
